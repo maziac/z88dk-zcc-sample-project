@@ -1,0 +1,49 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "zcc build",
+            "type": "shell",
+            "command": "zcc +zxn -subtype=nex -vn --list -m --c-code-in-asm --lstcwd -clib=sdcc_iy -Cz\"--clean\" -startup=0 src/*.c src/*.asm -create-app -o build/main.nex",
+            //"command": "cd src; zcc +zxn -subtype=nex -vn --list -m --c-code-in-asm --lstcwd -clib=sdcc_iy -Cz\"--clean\" -startup=0 *.c *.asm -create-app -o ../build/main.nex",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                {
+                    "owner": "zcc",
+                    "pattern": [
+                        {
+                            "regexp": "^(.*?):(\\d+):.*(warning|error).*:\\s+(.*)$",
+                            "file": 1,
+                            "line": 2,
+                            "severity": 3,
+                            "message": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "start cspect",
+            "type": "shell",
+            "command": "mono", // For windows users: Remove 'mono' and add 'CSpect.exe' instead
+            "args": [
+                "CSpect.exe", // For windows users: remove this entry
+                "-w4", // Window size
+                "-zxnext", // Use zxnext HW registers
+                "-mmc=./", // Enable RST 8, emulate SW card at director ./  (the trailing slash is important)
+                "-tv", // Disable TV shader
+                "-r", // Remember window settings
+                "-debug" // Start up in (CSpect) debugger
+            ],
+            "options": {
+                "cwd": "${config:cspect_dir}",
+            },
+            "problemMatcher": []
+        },
+    ]
+}

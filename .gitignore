@@ -1,0 +1,13 @@
+# Build directories
+build/
+
+# Temporal files for dezog
+.tmp/
+
+# Object and debug files
+src/*.o
+src/*.lis
+src/*.sym
+
+# MacOS files
+.DS_Store

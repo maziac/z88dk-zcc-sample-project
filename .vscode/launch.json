@@ -1,0 +1,48 @@
+{
+    "configurations": [
+        {
+            "type": "dezog",
+            "request": "launch",
+            "name": "zsim",
+            "remoteType": "zsim",
+            "zsim": {
+                "preset": "spectrum",
+                "memoryModel": "ZXNEXT",
+            },
+            "z88dkv2": [
+                {
+                    "path": "src/*.lis",
+                    "srcDirs": [
+                        ""
+                    ],
+                    "mapFile": "build/main.map",
+                    "excludeFiles": []
+                },
+            ],
+            "startAutomatically": true,
+            "rootFolder": "${workspaceFolder}",
+            "topOfStack": "0xFF58",
+            "load": "build/main.nex"
+        },
+        {
+            "type": "dezog",
+            "request": "launch",
+            "name": "cspect",
+            "remoteType": "cspect",
+            "z88dkv2": [
+                {
+                    "path": "src/*.lis",
+                    "srcDirs": [
+                        ""
+                    ],
+                    "mapFile": "build/main.map",
+                    "excludeFiles": []
+                },
+            ],
+            "startAutomatically": true,
+            "rootFolder": "${workspaceFolder}",
+            "topOfStack": "0xFF58",
+            "load": "build/main.nex"
+        }
+    ]
+}

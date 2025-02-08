@@ -1,0 +1,28 @@
+{
+    "env": {
+        "z88dk": "${env:ZCCCFG}/../.."
+    },
+    "configurations": [
+        {
+            "name": "z88dk",
+            "includePath": [
+                "${z88dk}/include/_DEVELOPMENT/clang"
+            ],
+            // "cStandard": "c11",
+            "defines": [
+                // List of defines equal to the ones produced by zcc -v -c but for __INTELLISENSE__ and __SDCC
+                "__INTELLISENSE__",
+                "__ZXNEXT",
+                "__Z80",
+                "__Z80__",
+                "__Z80N",
+                "__SDCC_IY",
+                "__Z88DK_NEWLIB",
+                "__Z88DK"
+                // "__SDCC"
+            ],
+            "mergeConfigurations": true
+        }
+    ],
+    "version": 4
+}

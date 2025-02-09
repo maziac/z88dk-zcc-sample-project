@@ -6,28 +6,43 @@
 #include "factorial.h"
 
 
+// ZX Spectrum color escape sequences
+#define FG_GREEN "\x10\x34"
+#define FG_RED "\x10\x32"
+#define BG_COL "\x11\x30"   // Black
+#define CLS "\x0C"  // Clear screen
 
-int global_var = 5;
-int my_other_var = 1234;
+uint8_t border_color = INK_BLUE;
+int max_calculations = 5;
 
 int main(void) {
-
     int number;
-    while (1) {
-        *zx_cxy2aaddr(10, 5) = PAPER_GREEN | INK_RED;
-        printf("\x0C");
-        printf("%c%c", 16, 50); // INK Red (50 = '2' + 48)
+
+    // Setup colors
+    zx_border(border_color);
+    printf(FG_GREEN BG_COL);  // Text foreground and background colors
+    printf(CLS); // Clear screen
+
+
+    for (int i = 0; i < max_calculations; i++) {
         printf("Enter a number (or -1 to exit): ");
         scanf("%d", &number);
 
         if (number == -1) {
-            break;
+            return 0;
         }
 
         printf("Factorial(%d) = %d\n", number, factorial(number));
         printf("Fibonacci(%d) = %d\n", number, fibonacci(number));
-        printf("\x0C");
     }
+
+    // End
+    printf(FG_RED "Goodbye!\n%d calculations are enough.\n", max_calculations);
+    printf("Press a key...");
+
+    // Wait on key press
+    in_wait_nokey();    // Wait on previous key release
+    in_wait_key();
 
     return 0;
 }

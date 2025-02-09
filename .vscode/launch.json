@@ -8,6 +8,7 @@
             "zsim": {
                 "preset": "spectrum",
                 "memoryModel": "ZXNEXT",
+                "Z80N": true,   // E.g. because of mult
             },
             "z88dkv2": [
                 {

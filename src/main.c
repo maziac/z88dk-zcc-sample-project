@@ -14,6 +14,8 @@
 
 uint8_t border_color = INK_BLUE;
 int max_calculations = 5;
+int factorial_result = 0;
+int fibonacci_result = 0;
 
 int main(void) {
     int number;
@@ -32,8 +34,11 @@ int main(void) {
             return 0;
         }
 
-        printf("Factorial(%d) = %d\n", number, factorial(number));
-        printf("Fibonacci(%d) = %d\n", number, fibonacci(number));
+        factorial_result = factorial(number);
+        printf("Factorial(%d) = %d\n", number, factorial_result);
+
+        fibonacci_result = fibonacci(number);
+        printf("Fibonacci(%d) = %d\n", number, fibonacci_result);
     }
 
     // End

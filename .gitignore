@@ -11,3 +11,6 @@ src/*.sym
 
 # MacOS files
 .DS_Store
+
+# Misc
+trash/

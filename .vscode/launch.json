@@ -22,7 +22,7 @@
             ],
             "startAutomatically": true,
             "rootFolder": "${workspaceFolder}",
-            "topOfStack": "0xFF58",
+            "topOfStack": "__register_sp",
             "load": "build/main.nex"
         },
         {
@@ -42,7 +42,7 @@
             ],
             "startAutomatically": true,
             "rootFolder": "${workspaceFolder}",
-            "topOfStack": "0xFF58",
+            "topOfStack": "__register_sp",
             "load": "build/main.nex"
         }
     ]

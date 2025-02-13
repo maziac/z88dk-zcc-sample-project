@@ -1,5 +1,7 @@
 #include "factorial.h"
 #include <stdio.h>
+#include <arch/zxn.h>
+
 
 int factorial(int fact_n) {
     int value = 1;

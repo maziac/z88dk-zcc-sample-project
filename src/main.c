@@ -17,6 +17,7 @@ int max_calculations = 5;
 int factorial_result = 0;
 int fibonacci_result = 0;
 
+
 int main(void) {
     int number;
 

@@ -1,0 +1,16 @@
+/tmp/tmpHKkjtXU6.asm:
+     1                          MODULE clear_ula_asm
+     2                          LINE 0, "src/clear-ula.asm"
+src/clear-ula.asm:
+                                
+     1                          SECTION code_user
+     2                          
+     3                          PUBLIC _clear_ula
+     4                          
+     5                          _clear_ula:
+     6  0000  210040                ld hl, 0x4000
+     7  0003  110140                ld de, 0x4001
+     8  0006  010018                ld bc, 6144
+     9  0009  edb0                  ldir
+    10  000b  c9                    ret
+    11                          

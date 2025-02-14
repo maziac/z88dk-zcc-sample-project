@@ -44,7 +44,8 @@ However, in this example the files are put to version control so that you can te
 # Two Compilers
 The z88dk supports to compilers: the sdcc (-clib=sdcc_ix/y) and the sccz80 (--clib=new).
 
-TODO: Explain which is supported
+Only the sdcc is supported for stepping through C-code.
+The syntax of the sccz80 in the .lis file cannot be parsed.
 
 
 # Tutorial

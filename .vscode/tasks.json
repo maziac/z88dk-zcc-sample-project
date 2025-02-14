@@ -7,6 +7,7 @@
             "label": "zcc build",
             "type": "shell",
             "command": "zcc +zxn -subtype=nex -vn --list -m --c-code-in-asm --lstcwd -clib=sdcc_iy -Cz\"--clean\" -startup=1 src/*.c src/*.asm -create-app -o build/main.nex",
+            //"command": "zcc +zxn -subtype=nex -vn --list -m --c-code-in-asm --lstcwd -clib=new -Cz\"--clean\" -startup=1 src/*.c src/*.asm -create-app -o build/main.nex",
             "group": {
                 "kind": "build",
                 "isDefault": true

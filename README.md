@@ -1,7 +1,8 @@
 # Sample project for ZXSpectrum Next using Z88dk in VS Code
 
 **!NOTE: THIS IS A PREVIEW!**
-**The official DeZog does not yet support debugging of C-code.**
+**The official DeZog does not yet support debugging of C-code.
+**
 
 This repo a slightly modified copy of the [vscode-z88dk-next-sample-project](https://github.com/vmorilla/vscode-z88dk-next-sample-project) repo by [vmorilla](https://github.com/vmorilla).
 Main difference is that it does not use a Makefile, so it might be a little easier to setup especially in Windows.

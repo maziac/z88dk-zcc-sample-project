@@ -69,6 +69,12 @@ This will re-create all the .lis, map and .nex files.
 You can also skip this step if you just want to try out DeZog as all the required .lis, .map and .nex files do come with this repo, as well.
 Of course, in this case you cannot change the sources.
 
+## Top of stack
+In launch.json you can set the `topOfStack` to the z88dk label `__register_sp` to set the stack for evaluation in DeZog.
+~~~json
+"topOfStack": "__register_sp",
+~~~
+
 ## Debugging
 1. Set a breakpoint at function `main`:
 ![](assets/bp_main.jpg)

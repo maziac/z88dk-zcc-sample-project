@@ -1,7 +1,7 @@
-/tmp/tmpAn5fKczT.asm:
+/tmp/tmpPACoOWRa.asm:
      1                          MODULE fibonacci_c
-     2                          LINE 0, "src/fibonacci.c"
-src/fibonacci.c:
+     2                          LINE 0, "src/math/fibonacci.c"
+src/math/fibonacci.c:
                                 
      1                          ;--------------------------------------------------------
      2                          ; File Created by SDCC : free open source ISO C Compiler
@@ -250,7 +250,7 @@ src/fibonacci.c:
    245                          ; code
    246                          ;--------------------------------------------------------
    247                          	SECTION code_compiler
-   248                          ;src/fibonacci.c:4: int fibonacci(int n) {
+   248                          ;src/math/fibonacci.c:4: int fibonacci(int n) {
    249                          ;	---------------------------------
    250                          ; Function fibonacci
    251                          ; ---------------------------------
@@ -258,7 +258,7 @@ src/fibonacci.c:
    253  0000  dde5              	push	ix
    254  0002  dd210000          	ld	ix,0
    255  0006  dd39              	add	ix,sp
-   256                          ;src/fibonacci.c:5: if (n <= 1) {
+   256                          ;src/math/fibonacci.c:5: if (n <= 1) {
    257  0008  3e01              	ld	a,0x01
    258  000a  ddbe04            	cp	a,(ix+4)
    259  000d  3e00              	ld	a,0x00
@@ -267,12 +267,12 @@ src/fibonacci.c:
    262  0015  ee80              	xor	a,0x80
    263                          l_fibonacci_00110:
    264  0017  fa2200            	jp	M, l_fibonacci_00102
-   265                          ;src/fibonacci.c:6: return n;
+   265                          ;src/math/fibonacci.c:6: return n;
    266  001a  dd6e04            	ld	l,(ix+4)
    267  001d  dd6605            	ld	h,(ix+5)
    268  0020  181d              	jr	l_fibonacci_00103
    269                          l_fibonacci_00102:
-   270                          ;src/fibonacci.c:8: return fibonacci(n - 1) + fibonacci(n - 2);
+   270                          ;src/math/fibonacci.c:8: return fibonacci(n - 1) + fibonacci(n - 2);
    271  0022  dd4e04            	ld	c,(ix+4)
    272  0025  dd4605            	ld	b,(ix+5)
    273  0028  0b                	dec	bc
@@ -291,7 +291,7 @@ src/fibonacci.c:
    286  003d  d1                	pop	de
    287  003e  19                	add	hl, de
    288                          l_fibonacci_00103:
-   289                          ;src/fibonacci.c:9: }
+   289                          ;src/math/fibonacci.c:9: }
    290  003f  dde1              	pop	ix
    291  0041  c9                	ret
    292                          	SECTION IGNORE

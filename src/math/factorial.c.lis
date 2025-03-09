@@ -1,7 +1,7 @@
-/tmp/tmpdo0rjbz3.asm:
+/tmp/tmpH5NuJ0BP.asm:
      1                          MODULE factorial_c
-     2                          LINE 0, "src/factorial.c"
-src/factorial.c:
+     2                          LINE 0, "src/math/factorial.c"
+src/math/factorial.c:
                                 
      1                          ;--------------------------------------------------------
      2                          ; File Created by SDCC : free open source ISO C Compiler
@@ -794,7 +794,7 @@ src/factorial.c:
    789                          ; code
    790                          ;--------------------------------------------------------
    791                          	SECTION code_compiler
-   792                          ;src/factorial.c:6: int factorial(int fact_n) {
+   792                          ;src/math/factorial.c:6: int factorial(int fact_n) {
    793                          ;	---------------------------------
    794                          ; Function factorial
    795                          ; ---------------------------------
@@ -802,9 +802,9 @@ src/factorial.c:
    797  0000  dde5              	push	ix
    798  0002  dd210000          	ld	ix,0
    799  0006  dd39              	add	ix,sp
-   800                          ;src/factorial.c:7: int value = 1;
+   800                          ;src/math/factorial.c:7: int value = 1;
    801  0008  110100            	ld	de,0x0001
-   802                          ;src/factorial.c:8: for (int i = 2; i <= fact_n; i++) {
+   802                          ;src/math/factorial.c:8: for (int i = 2; i <= fact_n; i++) {
    803  000b  010200            	ld	bc,0x0002
    804                          l_factorial_00103:
    805  000e  dd7e04            	ld	a,(ix+4)
@@ -815,20 +815,20 @@ src/factorial.c:
    810  0019  ee80              	xor	a,0x80
    811                          l_factorial_00118:
    812  001b  fa2900            	jp	M, l_factorial_00101
-   813                          ;src/factorial.c:9: value *= i;
+   813                          ;src/math/factorial.c:9: value *= i;
    814  001e  c5                	push	bc
    815  001f  c5                	push	bc
    816  0020  d5                	push	de
    817  0021  cd0000            	call	__mulint_callee
    818  0024  eb                	ex	de, hl
    819  0025  c1                	pop	bc
-   820                          ;src/factorial.c:8: for (int i = 2; i <= fact_n; i++) {
+   820                          ;src/math/factorial.c:8: for (int i = 2; i <= fact_n; i++) {
    821  0026  03                	inc	bc
    822  0027  18e5              	jr	l_factorial_00103
    823                          l_factorial_00101:
-   824                          ;src/factorial.c:11: return value;
+   824                          ;src/math/factorial.c:11: return value;
    825  0029  eb                	ex	de, hl
-   826                          ;src/factorial.c:12: }
+   826                          ;src/math/factorial.c:12: }
    827  002a  dde1              	pop	ix
    828  002c  c9                	ret
    829                          	SECTION IGNORE

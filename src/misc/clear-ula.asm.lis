@@ -1,7 +1,7 @@
-/tmp/tmpD48PsAuY.asm:
+/tmp/tmpex738Lrf.asm:
      1                          MODULE clear_ula_asm
-     2                          LINE 0, "src/clear-ula.asm"
-src/clear-ula.asm:
+     2                          LINE 0, "src/misc/clear-ula.asm"
+src/misc/clear-ula.asm:
                                 
      1                          SECTION code_user
      2                          

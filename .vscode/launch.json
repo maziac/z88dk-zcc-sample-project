@@ -16,8 +16,21 @@
                     "srcDirs": [
                         ""
                     ],
-                    "mapFile": "build/main.map",
-                    "excludeFiles": []
+                    "mapFile": "build/main.map"
+                },
+                {
+                    "path":"src/math/*.lis",
+                    "srcDirs": [
+                        ""
+                    ],
+                    "mapFile": "build/main.map"
+                },
+                {
+                    "path": "src/misc/*.lis",
+                    "srcDirs": [
+                        ""
+                    ],
+                    "mapFile": "build/main.map"
                 },
             ],
             "startAutomatically": true,

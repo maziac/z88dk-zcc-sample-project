@@ -19,10 +19,10 @@
                 //"-clib=new",
                 "-Cz\"--clean\"",
                 "-startup=1",
-                "src/factorial.c",
-                "src/fibonacci.c",
+                "src/math/factorial.c",
+                "src/math/fibonacci.c",
                 "src/main.c",
-                "src/clear-ula.asm",
+                "src/misc/clear-ula.asm",
                 "-create-app",
                 "-o", "build/main.nex"
             ],

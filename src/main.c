@@ -1,9 +1,9 @@
 #include <arch/spectrum.h>
 #include <stdio.h>
 #include <input.h>
-#include "clear-ula.h"
-#include "fibonacci.h"
-#include "factorial.h"
+#include "misc/clear-ula.h"
+#include "math/fibonacci.h"
+#include "math/factorial.h"
 
 
 // ZX Spectrum color escape sequences
@@ -26,6 +26,7 @@ int main(void) {
     printf(FG_GREEN BG_COL);  // Text foreground and background colors
     printf(CLS); // Clear screen
 
+        factorial_result = factorial(4);
 
     for (int i = 0; i < max_calculations; i++) {
         printf("Enter a number (or -1 to exit): ");

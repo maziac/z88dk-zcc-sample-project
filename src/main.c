@@ -26,8 +26,6 @@ int main(void) {
     printf(FG_GREEN BG_COL);  // Text foreground and background colors
     printf(CLS); // Clear screen
 
-        factorial_result = factorial(4);
-
     for (int i = 0; i < max_calculations; i++) {
         printf("Enter a number (or -1 to exit): ");
         scanf("%d", &number);

@@ -1,4 +1,4 @@
-/tmp/tmpdNgoBhGp.asm:
+/tmp/tmpAKBOMgGE.asm:
      1                          MODULE main_c
      2                          LINE 0, "src/main.c"
 src/main.c:
@@ -600,180 +600,175 @@ src/main.c:
    595  0018  210000            	ld	hl,___str_1
    596  001b  e3                	ex	(sp),hl
    597  001c  cd0000            	call	_printf
-   598                          ;src/main.c:29: factorial_result = factorial(4);
-   599  001f  210000            	ld	hl,0x0004
-   600  0022  e3                	ex	(sp),hl
-   601  0023  cd0000            	call	_factorial
-   602  0026  f1                	pop	af
-   603  0027  220000            	ld	(_factorial_result), hl
-   604                          ;src/main.c:31: for (int i = 0; i < max_calculations; i++) {
-   605  002a  af                	xor	a, a
-   606  002b  dd7700            	ld	(ix-2),a
-   607  002e  dd7700            	ld	(ix-1),a
-   608                          l_main_00105:
-   609  0031  dd7e00            	ld	a,(ix-2)
-   610  0034  210000            	ld	hl,_max_calculations
-   611  0037  96                	sub	a, (hl)
-   612  0038  dd7e00            	ld	a,(ix-1)
-   613  003b  23                	inc	hl
-   614  003c  9e                	sbc	a, (hl)
-   615  003d  e20000            	jp	PO, l_main_00124
-   616  0040  ee00              	xor	a,0x80
-   617                          l_main_00124:
-   618  0042  f20000            	jp	P, l_main_00103
-   619                          ;src/main.c:32: printf("Enter a number (or -1 to exit): ");
-   620  0045  210000            	ld	hl,___str_2
-   621  0048  e5                	push	hl
-   622  0049  cd0000            	call	_printf
-   623  004c  f1                	pop	af
-   624                          ;src/main.c:33: scanf("%d", &number);
-   625  004d  210000            	ld	hl,0
-   626  0050  39                	add	hl, sp
-   627  0051  e5                	push	hl
-   628  0052  210000            	ld	hl,___str_3
-   629  0055  e5                	push	hl
-   630  0056  cd0000            	call	_scanf
-   631  0059  f1                	pop	af
-   632  005a  f1                	pop	af
-   633                          ;src/main.c:35: if (number == -1) {
-   634  005b  dd7e00            	ld	a,(ix-4)
-   635  005e  dda600            	and	a,(ix-3)
-   636  0061  3c                	inc	a
-   637  0062  2000              	jr	NZ,l_main_00102
-   638                          ;src/main.c:36: return 0;
-   639  0064  210000            	ld	hl,0x0000
-   640  0067  1800              	jr	l_main_00107
-   641                          l_main_00102:
-   642                          ;src/main.c:39: factorial_result = factorial(number);
-   643  0069  e1                	pop	hl
-   644  006a  e5                	push	hl
-   645  006b  e5                	push	hl
-   646  006c  cd0000            	call	_factorial
-   647  006f  f1                	pop	af
-   648  0070  220000            	ld	(_factorial_result), hl
-   649                          ;src/main.c:40: printf("Factorial(%d) = %d\n", number, factorial_result);
-   650  0073  2a0000            	ld	hl, (_factorial_result)
-   651  0076  eb                	ex	de,hl
-   652  0077  e1                	pop	hl
-   653  0078  e5                	push	hl
-   654  0079  d5                	push	de
-   655  007a  e5                	push	hl
-   656  007b  210000            	ld	hl,___str_4
-   657  007e  e5                	push	hl
-   658  007f  cd0000            	call	_printf
-   659  0082  f1                	pop	af
-   660  0083  f1                	pop	af
-   661  0084  f1                	pop	af
-   662                          ;src/main.c:42: fibonacci_result = fibonacci(number);
-   663  0085  e1                	pop	hl
-   664  0086  e5                	push	hl
-   665  0087  e5                	push	hl
-   666  0088  cd0000            	call	_fibonacci
-   667  008b  f1                	pop	af
-   668  008c  220500            	ld	(_fibonacci_result), hl
-   669                          ;src/main.c:43: printf("Fibonacci(%d) = %d\n", number, fibonacci_result);
-   670  008f  2a0500            	ld	hl, (_fibonacci_result)
-   671  0092  eb                	ex	de,hl
-   672  0093  e1                	pop	hl
-   673  0094  e5                	push	hl
-   674  0095  d5                	push	de
-   675  0096  e5                	push	hl
-   676  0097  213f00            	ld	hl,___str_5
-   677  009a  e5                	push	hl
-   678  009b  cd0000            	call	_printf
-   679  009e  f1                	pop	af
-   680  009f  f1                	pop	af
-   681  00a0  f1                	pop	af
-   682                          ;src/main.c:31: for (int i = 0; i < max_calculations; i++) {
-   683  00a1  dd34fe            	inc	(ix-2)
-   684  00a4  208b              	jr	NZ,l_main_00105
-   685  00a6  dd34ff            	inc	(ix-1)
-   686  00a9  c33100            	jp	l_main_00105
-   687                          l_main_00103:
-   688                          ;src/main.c:47: printf(FG_RED "Goodbye!\n%d calculations are enough.\n", max_calculations);
-   689  00ac  2a0100            	ld	hl, (_max_calculations)
-   690  00af  e5                	push	hl
-   691  00b0  215300            	ld	hl,___str_6
-   692  00b3  e5                	push	hl
-   693  00b4  cd0000            	call	_printf
-   694  00b7  f1                	pop	af
-   695                          ;src/main.c:48: printf("Press a key...");
-   696  00b8  217b00            	ld	hl,___str_7
-   697  00bb  e3                	ex	(sp),hl
-   698  00bc  cd0000            	call	_printf
-   699  00bf  f1                	pop	af
-   700                          ;src/main.c:51: in_wait_nokey();    // Wait on previous key release
-   701  00c0  cd0000            	call	_in_wait_nokey
-   702                          ;src/main.c:52: in_wait_key();
-   703  00c3  cd0000            	call	_in_wait_key
-   704                          ;src/main.c:54: return 0;
-   705  00c6  210000            	ld	hl,0x0000
-   706                          l_main_00107:
-   707                          ;src/main.c:55: }
-   708  00c9  ddf9              	ld	sp, ix
-   709  00cb  dde1              	pop	ix
-   710  00cd  c9                	ret
-   711                          	SECTION rodata_compiler
-   712                          ___str_0:
-   713  0000  00                	DEFB 0x10
-   714  0001  34                	DEFM "4"
-   715  0002  00                	DEFB 0x11
-   716  0003  30                	DEFM "0"
-   717  0004  00                	DEFB 0x00
-   718                          	SECTION rodata_compiler
-   719                          ___str_1:
-   720  0005  00                	DEFB 0x0c
-   721  0006  00                	DEFB 0x00
-   722                          	SECTION rodata_compiler
-   723                          ___str_2:
-   724  0007  456e746500006120  	DEFM "Enter a number (or -1 to exit): "
+   598  001f  f1                	pop	af
+   599                          ;src/main.c:29: for (int i = 0; i < max_calculations; i++) {
+   600  0020  af                	xor	a, a
+   601  0021  dd7700            	ld	(ix-2),a
+   602  0024  dd7700            	ld	(ix-1),a
+   603                          l_main_00105:
+   604  0027  dd7e00            	ld	a,(ix-2)
+   605  002a  210000            	ld	hl,_max_calculations
+   606  002d  96                	sub	a, (hl)
+   607  002e  dd7e00            	ld	a,(ix-1)
+   608  0031  23                	inc	hl
+   609  0032  9e                	sbc	a, (hl)
+   610  0033  e20000            	jp	PO, l_main_00124
+   611  0036  ee00              	xor	a,0x80
+   612                          l_main_00124:
+   613  0038  f20000            	jp	P, l_main_00103
+   614                          ;src/main.c:30: printf("Enter a number (or -1 to exit): ");
+   615  003b  210000            	ld	hl,___str_2
+   616  003e  e5                	push	hl
+   617  003f  cd0000            	call	_printf
+   618  0042  f1                	pop	af
+   619                          ;src/main.c:31: scanf("%d", &number);
+   620  0043  210000            	ld	hl,0
+   621  0046  39                	add	hl, sp
+   622  0047  e5                	push	hl
+   623  0048  210000            	ld	hl,___str_3
+   624  004b  e5                	push	hl
+   625  004c  cd0000            	call	_scanf
+   626  004f  f1                	pop	af
+   627  0050  f1                	pop	af
+   628                          ;src/main.c:33: if (number == -1) {
+   629  0051  dd7e00            	ld	a,(ix-4)
+   630  0054  dda600            	and	a,(ix-3)
+   631  0057  3c                	inc	a
+   632  0058  2000              	jr	NZ,l_main_00102
+   633                          ;src/main.c:34: return 0;
+   634  005a  210000            	ld	hl,0x0000
+   635  005d  1800              	jr	l_main_00107
+   636                          l_main_00102:
+   637                          ;src/main.c:37: factorial_result = factorial(number);
+   638  005f  e1                	pop	hl
+   639  0060  e5                	push	hl
+   640  0061  e5                	push	hl
+   641  0062  cd0000            	call	_factorial
+   642  0065  f1                	pop	af
+   643  0066  220000            	ld	(_factorial_result), hl
+   644                          ;src/main.c:38: printf("Factorial(%d) = %d\n", number, factorial_result);
+   645  0069  2a0000            	ld	hl, (_factorial_result)
+   646  006c  eb                	ex	de,hl
+   647  006d  e1                	pop	hl
+   648  006e  e5                	push	hl
+   649  006f  d5                	push	de
+   650  0070  e5                	push	hl
+   651  0071  210000            	ld	hl,___str_4
+   652  0074  e5                	push	hl
+   653  0075  cd0000            	call	_printf
+   654  0078  f1                	pop	af
+   655  0079  f1                	pop	af
+   656  007a  f1                	pop	af
+   657                          ;src/main.c:40: fibonacci_result = fibonacci(number);
+   658  007b  e1                	pop	hl
+   659  007c  e5                	push	hl
+   660  007d  e5                	push	hl
+   661  007e  cd0000            	call	_fibonacci
+   662  0081  f1                	pop	af
+   663  0082  220000            	ld	(_fibonacci_result), hl
+   664                          ;src/main.c:41: printf("Fibonacci(%d) = %d\n", number, fibonacci_result);
+   665  0085  2a0000            	ld	hl, (_fibonacci_result)
+   666  0088  eb                	ex	de,hl
+   667  0089  e1                	pop	hl
+   668  008a  e5                	push	hl
+   669  008b  d5                	push	de
+   670  008c  e5                	push	hl
+   671  008d  213f00            	ld	hl,___str_5
+   672  0090  e5                	push	hl
+   673  0091  cd0000            	call	_printf
+   674  0094  f1                	pop	af
+   675  0095  f1                	pop	af
+   676  0096  f1                	pop	af
+   677                          ;src/main.c:29: for (int i = 0; i < max_calculations; i++) {
+   678  0097  dd34fe            	inc	(ix-2)
+   679  009a  208b              	jr	NZ,l_main_00105
+   680  009c  dd34ff            	inc	(ix-1)
+   681  009f  c32700            	jp	l_main_00105
+   682                          l_main_00103:
+   683                          ;src/main.c:45: printf(FG_RED "Goodbye!\n%d calculations are enough.\n", max_calculations);
+   684  00a2  2a0100            	ld	hl, (_max_calculations)
+   685  00a5  e5                	push	hl
+   686  00a6  215300            	ld	hl,___str_6
+   687  00a9  e5                	push	hl
+   688  00aa  cd0000            	call	_printf
+   689  00ad  f1                	pop	af
+   690                          ;src/main.c:46: printf("Press a key...");
+   691  00ae  217b00            	ld	hl,___str_7
+   692  00b1  e3                	ex	(sp),hl
+   693  00b2  cd0000            	call	_printf
+   694  00b5  f1                	pop	af
+   695                          ;src/main.c:49: in_wait_nokey();    // Wait on previous key release
+   696  00b6  cd0000            	call	_in_wait_nokey
+   697                          ;src/main.c:50: in_wait_key();
+   698  00b9  cd0000            	call	_in_wait_key
+   699                          ;src/main.c:52: return 0;
+   700  00bc  210000            	ld	hl,0x0000
+   701                          l_main_00107:
+   702                          ;src/main.c:53: }
+   703  00bf  ddf9              	ld	sp, ix
+   704  00c1  dde1              	pop	ix
+   705  00c3  c9                	ret
+   706                          	SECTION rodata_compiler
+   707                          ___str_0:
+   708  0000  00                	DEFB 0x10
+   709  0001  34                	DEFM "4"
+   710  0002  00                	DEFB 0x11
+   711  0003  30                	DEFM "0"
+   712  0004  00                	DEFB 0x00
+   713                          	SECTION rodata_compiler
+   714                          ___str_1:
+   715  0005  00                	DEFB 0x0c
+   716  0006  00                	DEFB 0x00
+   717                          	SECTION rodata_compiler
+   718                          ___str_2:
+   719  0007  456e746500006120  	DEFM "Enter a number (or -1 to exit): "
               00006d0000722000  
               0072050031200000  
-              2004006974000020  
-   725  0027  00                	DEFB 0x00
-   726                          	SECTION rodata_compiler
-   727                          ___str_3:
-   728  0028  0300              	DEFM "%d"
-   729  002a  00                	DEFB 0x00
+              20657869fe293aff  
+   720  0027  00                	DEFB 0x00
+   721                          	SECTION rodata_compiler
+   722                          ___str_3:
+   723  0028  25fe              	DEFM "%d"
+   724  002a  00                	DEFB 0x00
+   725                          	SECTION rodata_compiler
+   726                          ___str_4:
+   727  002b  010063746fff6961  	DEFM "Factorial(%d) = %d"
+              6c3800648020a200  
+              2507              
+   728  003d  0a                	DEFB 0x0a
+   729  003e  00                	DEFB 0x00
    730                          	SECTION rodata_compiler
-   731                          ___str_4:
-   732  002b  4661fe746fff6961  	DEFM "Factorial(%d) = %d"
-              fe28010029203dff  
+   731                          ___str_5:
+   732  003f  4600006f6e000063  	DEFM "Fibonacci(%d) = %d"
+              6928280029200000  
               2564              
-   733  003d  0a                	DEFB 0x0a
-   734  003e  00                	DEFB 0x00
+   733  0051  0a                	DEFB 0x0a
+   734  0052  00                	DEFB 0x00
    735                          	SECTION rodata_compiler
-   736                          ___str_5:
-   737  003f  0069806fac006307  	DEFM "Fibonacci(%d) = %d"
-              0028250000203d00  
-              0064              
-   738  0051  0a                	DEFB 0x0a
-   739  0052  00                	DEFB 0x00
-   740                          	SECTION rodata_compiler
-   741                          ___str_6:
-   742  0053  10                	DEFB 0x10
-   743  0054  00476f0000627965  	DEFM "2Goodbye!"
-              21                
-   744  005d  0a                	DEFB 0x0a
-   745  005e  2564fd6361056300  	DEFM "%d calculations are enough."
-              006160696f6e7300  
-              00726503006e0300  
-              67682e            
-   746  0079  0a                	DEFB 0x0a
-   747  007a  00                	DEFB 0x00
-   748                          	SECTION rodata_compiler
-   749                          ___str_7:
-   750  007b  502b007373000020  	DEFM "Press a key..."
-              6b65792e2e2e      
-   751  0089  00                	DEFB 0x00
-   752                          	SECTION data_compiler
-   753                          _border_color:
-   754  0000  01                	DEFB +0x01
-   755                          _max_calculations:
-   756  0001  0500              	DEFW +0x0005
-   757                          _factorial_result:
-   758  0003  0000              	DEFW +0x0000
-   759                          _fibonacci_result:
-   760  0005  0000              	DEFW +0x0000
-   761                          	SECTION IGNORE
-   762                          
+   736                          ___str_6:
+   737  0053  10                	DEFB 0x10
+   738  0054  3247fd6f64057900  	DEFM "2Goodbye!"
+              00                
+   739  005d  0a                	DEFB 0x0a
+   740  005e  6064206361000075  	DEFM "%d calculations are enough."
+              6c03006903007320  
+              617265202b006f75  
+              00002e            
+   741  0079  0a                	DEFB 0x0a
+   742  007a  00                	DEFB 0x00
+   743                          	SECTION rodata_compiler
+   744                          ___str_7:
+   745  007b  5072657300006120  	DEFM "Press a key..."
+              05007905002e      
+   746  0089  00                	DEFB 0x00
+   747                          	SECTION data_compiler
+   748                          _border_color:
+   749  0000  01                	DEFB +0x01
+   750                          _max_calculations:
+   751  0001  0500              	DEFW +0x0005
+   752                          _factorial_result:
+   753  0003  0000              	DEFW +0x0000
+   754                          _fibonacci_result:
+   755  0005  0000              	DEFW +0x0000
+   756                          	SECTION IGNORE
+   757                          

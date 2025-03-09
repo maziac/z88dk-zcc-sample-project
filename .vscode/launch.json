@@ -12,25 +12,12 @@
             },
             "z88dkv2": [
                 {
-                    "path": "src/*.lis",
+                    "path": "src/**/*.lis",
                     "srcDirs": [
                         ""
                     ],
-                    "mapFile": "build/main.map"
-                },
-                {
-                    "path":"src/math/*.lis",
-                    "srcDirs": [
-                        ""
-                    ],
-                    "mapFile": "build/main.map"
-                },
-                {
-                    "path": "src/misc/*.lis",
-                    "srcDirs": [
-                        ""
-                    ],
-                    "mapFile": "build/main.map"
+                    "mapFile": "build/main.map",
+                    "excludeFiles": []
                 },
             ],
             "startAutomatically": true,
@@ -45,7 +32,7 @@
             "remoteType": "cspect",
             "z88dkv2": [
                 {
-                    "path": "src/*.lis",
+                    "path": "src/**/*.lis",
                     "srcDirs": [
                         ""
                     ],

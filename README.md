@@ -1,8 +1,9 @@
 # Sample project for ZXSpectrum Next using Z88dk in VS Code
-This repo a slightly modified copy of the [vscode-z88dk-next-sample-project](https://github.com/vmorilla/vscode-z88dk-next-sample-project) repo by [vmorilla](https://github.com/vmorilla).
+Note: This repo a slightly modified copy of the [vscode-z88dk-next-sample-project](https://github.com/vmorilla/vscode-z88dk-next-sample-project) repo by [vmorilla](https://github.com/vmorilla).
 Main difference is that it does not use a Makefile, so it might be a little easier to setup especially in Windows.
 
-This sample project can run under macos, Linux and Windows.
+**This sample project can run under macos, Linux and Windows.
+It shows how to use breakpoints with the z88dk C-compiler and [DeZog](https://github.com/maziac/DeZog).**
 
 As a prerequisite you need to have a recent working installation of z88dk.
 You can get it [here](https://github.com/z88dk/z88dk), under [releases](https://github.com/z88dk/z88dk/releases) you find some binaries.

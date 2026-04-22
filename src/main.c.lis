@@ -1,213 +1,213 @@
-/tmp/tmpAKBOMgGE.asm:
+/tmp/tmpPxSM5579.asm:
      1                          MODULE main_c
      2                          LINE 0, "src/main.c"
 src/main.c:
                                 
      1                          ;--------------------------------------------------------
      2                          ; File Created by SDCC : free open source ISO C Compiler
-     3                          ; Version 4.3.0 #14210 (Mac OS X ppc)
+     3                          ; Version 4.5.0 #15242 (Mac OS X ppc)
      4                          ;--------------------------------------------------------
-     5                          	.zxn
-     6                          ; Processed by Z88DK
-     7                          ;--------------------------------------------------------
-     8                          
-     9                          	EXTERN __divschar
-    10                          	EXTERN __divschar_callee
-    11                          	EXTERN __divsint
-    12                          	EXTERN __divsint_callee
-    13                          	EXTERN __divslong
-    14                          	EXTERN __divslong_callee
-    15                          	EXTERN __divslonglong
-    16                          	EXTERN __divslonglong_callee
-    17                          	EXTERN __divsuchar
-    18                          	EXTERN __divsuchar_callee
-    19                          	EXTERN __divuchar
-    20                          	EXTERN __divuchar_callee
-    21                          	EXTERN __divuint
-    22                          	EXTERN __divuint_callee
-    23                          	EXTERN __divulong
-    24                          	EXTERN __divulong_callee
-    25                          	EXTERN __divulonglong
-    26                          	EXTERN __divulonglong_callee
-    27                          	EXTERN __divuschar
-    28                          	EXTERN __divuschar_callee
-    29                          	EXTERN __modschar
-    30                          	EXTERN __modschar_callee
-    31                          	EXTERN __modsint
-    32                          	EXTERN __modsint_callee
-    33                          	EXTERN __modslong
-    34                          	EXTERN __modslong_callee
-    35                          	EXTERN __modslonglong
-    36                          	EXTERN __modslonglong_callee
-    37                          	EXTERN __modsuchar
-    38                          	EXTERN __modsuchar_callee
-    39                          	EXTERN __moduchar
-    40                          	EXTERN __moduchar_callee
-    41                          	EXTERN __moduint
-    42                          	EXTERN __moduint_callee
-    43                          	EXTERN __modulong
-    44                          	EXTERN __modulong_callee
-    45                          	EXTERN __modulonglong
-    46                          	EXTERN __modulonglong_callee
-    47                          	EXTERN __moduschar
-    48                          	EXTERN __moduschar_callee
-    49                          	EXTERN __mulint
-    50                          	EXTERN __mulint_callee
-    51                          	EXTERN __mullong
-    52                          	EXTERN __mullong_callee
-    53                          	EXTERN __mullonglong
-    54                          	EXTERN __mullonglong_callee
-    55                          	EXTERN __mulschar
-    56                          	EXTERN __mulschar_callee
-    57                          	EXTERN __mulsuchar
-    58                          	EXTERN __mulsuchar_callee
-    59                          	EXTERN __muluchar
-    60                          	EXTERN __muluchar_callee
-    61                          	EXTERN __muluschar
-    62                          	EXTERN __muluschar_callee
-    63                          	EXTERN __rlslonglong
-    64                          	EXTERN __rlslonglong_callee
-    65                          	EXTERN __rlulonglong
-    66                          	EXTERN __rlulonglong_callee
-    67                          	EXTERN __rrslonglong
-    68                          	EXTERN __rrslonglong_callee
-    69                          	EXTERN __rrulonglong
-    70                          	EXTERN __rrulonglong_callee
-    71                          	EXTERN ___mulsint2slong
-    72                          	EXTERN ___mulsint2slong_callee
-    73                          	EXTERN ___muluint2ulong
-    74                          	EXTERN ___muluint2ulong_callee
-    75                          	EXTERN ___sdcc_call_hl
-    76                          	EXTERN ___sdcc_call_iy
-    77                          	EXTERN ___sdcc_enter_ix
-    78                          	EXTERN banked_call
-    79                          	EXTERN _banked_ret
-    80                          	EXTERN ___fs2schar
-    81                          	EXTERN ___fs2schar_callee
-    82                          	EXTERN ___fs2sint
-    83                          	EXTERN ___fs2sint_callee
-    84                          	EXTERN ___fs2slong
-    85                          	EXTERN ___fs2slong_callee
-    86                          	EXTERN ___fs2slonglong
-    87                          	EXTERN ___fs2slonglong_callee
-    88                          	EXTERN ___fs2uchar
-    89                          	EXTERN ___fs2uchar_callee
-    90                          	EXTERN ___fs2uint
-    91                          	EXTERN ___fs2uint_callee
-    92                          	EXTERN ___fs2ulong
-    93                          	EXTERN ___fs2ulong_callee
-    94                          	EXTERN ___fs2ulonglong
-    95                          	EXTERN ___fs2ulonglong_callee
-    96                          	EXTERN ___fsadd
-    97                          	EXTERN ___fsadd_callee
-    98                          	EXTERN ___fsdiv
-    99                          	EXTERN ___fsdiv_callee
-   100                          	EXTERN ___fseq
-   101                          	EXTERN ___fseq_callee
-   102                          	EXTERN ___fsgt
-   103                          	EXTERN ___fsgt_callee
-   104                          	EXTERN ___fslt
-   105                          	EXTERN ___fslt_callee
-   106                          	EXTERN ___fsmul
-   107                          	EXTERN ___fsmul_callee
-   108                          	EXTERN ___fsneq
-   109                          	EXTERN ___fsneq_callee
-   110                          	EXTERN ___fssub
-   111                          	EXTERN ___fssub_callee
-   112                          	EXTERN ___schar2fs
-   113                          	EXTERN ___schar2fs_callee
-   114                          	EXTERN ___sint2fs
-   115                          	EXTERN ___sint2fs_callee
-   116                          	EXTERN ___slong2fs
-   117                          	EXTERN ___slong2fs_callee
-   118                          	EXTERN ___slonglong2fs
-   119                          	EXTERN ___slonglong2fs_callee
-   120                          	EXTERN ___uchar2fs
-   121                          	EXTERN ___uchar2fs_callee
-   122                          	EXTERN ___uint2fs
-   123                          	EXTERN ___uint2fs_callee
-   124                          	EXTERN ___ulong2fs
-   125                          	EXTERN ___ulong2fs_callee
-   126                          	EXTERN ___ulonglong2fs
-   127                          	EXTERN ___ulonglong2fs_callee
-   128                          	EXTERN ____sdcc_2_copy_src_mhl_dst_deix
-   129                          	EXTERN ____sdcc_2_copy_src_mhl_dst_bcix
-   130                          	EXTERN ____sdcc_4_copy_src_mhl_dst_deix
-   131                          	EXTERN ____sdcc_4_copy_src_mhl_dst_bcix
-   132                          	EXTERN ____sdcc_4_copy_src_mhl_dst_mbc
-   133                          	EXTERN ____sdcc_4_ldi_nosave_bc
-   134                          	EXTERN ____sdcc_4_ldi_save_bc
-   135                          	EXTERN ____sdcc_4_push_hlix
-   136                          	EXTERN ____sdcc_4_push_mhl
-   137                          	EXTERN ____sdcc_lib_setmem_hl
-   138                          	EXTERN ____sdcc_ll_add_de_bc_hl
-   139                          	EXTERN ____sdcc_ll_add_de_bc_hlix
-   140                          	EXTERN ____sdcc_ll_add_de_hlix_bc
-   141                          	EXTERN ____sdcc_ll_add_de_hlix_bcix
-   142                          	EXTERN ____sdcc_ll_add_deix_bc_hl
-   143                          	EXTERN ____sdcc_ll_add_deix_hlix
-   144                          	EXTERN ____sdcc_ll_add_hlix_bc_deix
-   145                          	EXTERN ____sdcc_ll_add_hlix_deix_bc
-   146                          	EXTERN ____sdcc_ll_add_hlix_deix_bcix
-   147                          	EXTERN ____sdcc_ll_asr_hlix_a
-   148                          	EXTERN ____sdcc_ll_asr_mbc_a
-   149                          	EXTERN ____sdcc_ll_copy_src_de_dst_hlix
-   150                          	EXTERN ____sdcc_ll_copy_src_de_dst_hlsp
-   151                          	EXTERN ____sdcc_ll_copy_src_deix_dst_hl
-   152                          	EXTERN ____sdcc_ll_copy_src_deix_dst_hlix
-   153                          	EXTERN ____sdcc_ll_copy_src_deixm_dst_hlsp
-   154                          	EXTERN ____sdcc_ll_copy_src_desp_dst_hlsp
-   155                          	EXTERN ____sdcc_ll_copy_src_hl_dst_de
-   156                          	EXTERN ____sdcc_ll_copy_src_hlsp_dst_de
-   157                          	EXTERN ____sdcc_ll_copy_src_hlsp_dst_deixm
-   158                          	EXTERN ____sdcc_ll_lsl_hlix_a
-   159                          	EXTERN ____sdcc_ll_lsl_mbc_a
-   160                          	EXTERN ____sdcc_ll_lsr_hlix_a
-   161                          	EXTERN ____sdcc_ll_lsr_mbc_a
-   162                          	EXTERN ____sdcc_ll_push_hlix
-   163                          	EXTERN ____sdcc_ll_push_mhl
-   164                          	EXTERN ____sdcc_ll_sub_de_bc_hl
-   165                          	EXTERN ____sdcc_ll_sub_de_bc_hlix
-   166                          	EXTERN ____sdcc_ll_sub_de_hlix_bc
-   167                          	EXTERN ____sdcc_ll_sub_de_hlix_bcix
-   168                          	EXTERN ____sdcc_ll_sub_deix_bc_hl
-   169                          	EXTERN ____sdcc_ll_sub_deix_hlix
-   170                          	EXTERN ____sdcc_ll_sub_hlix_bc_deix
-   171                          	EXTERN ____sdcc_ll_sub_hlix_deix_bc
-   172                          	EXTERN ____sdcc_ll_sub_hlix_deix_bcix
-   173                          	EXTERN ____sdcc_load_debc_deix
-   174                          	EXTERN ____sdcc_load_dehl_deix
-   175                          	EXTERN ____sdcc_load_debc_mhl
-   176                          	EXTERN ____sdcc_load_hlde_mhl
-   177                          	EXTERN ____sdcc_store_dehl_bcix
-   178                          	EXTERN ____sdcc_store_debc_hlix
-   179                          	EXTERN ____sdcc_store_debc_mhl
-   180                          	EXTERN ____sdcc_cpu_pop_ei
-   181                          	EXTERN ____sdcc_cpu_pop_ei_jp
-   182                          	EXTERN ____sdcc_cpu_push_di
-   183                          	EXTERN ____sdcc_outi
-   184                          	EXTERN ____sdcc_outi_128
-   185                          	EXTERN ____sdcc_outi_256
-   186                          	EXTERN ____sdcc_ldi
-   187                          	EXTERN ____sdcc_ldi_128
-   188                          	EXTERN ____sdcc_ldi_256
-   189                          	EXTERN ____sdcc_4_copy_srcd_hlix_dst_deix
-   190                          	EXTERN ____sdcc_4_and_src_mbc_mhl_dst_deix
-   191                          	EXTERN ____sdcc_4_or_src_mbc_mhl_dst_deix
-   192                          	EXTERN ____sdcc_4_xor_src_mbc_mhl_dst_deix
-   193                          	EXTERN ____sdcc_4_or_src_dehl_dst_bcix
-   194                          	EXTERN ____sdcc_4_xor_src_dehl_dst_bcix
-   195                          	EXTERN ____sdcc_4_and_src_dehl_dst_bcix
-   196                          	EXTERN ____sdcc_4_xor_src_mbc_mhl_dst_debc
-   197                          	EXTERN ____sdcc_4_or_src_mbc_mhl_dst_debc
-   198                          	EXTERN ____sdcc_4_and_src_mbc_mhl_dst_debc
-   199                          	EXTERN ____sdcc_4_cpl_src_mhl_dst_debc
-   200                          	EXTERN ____sdcc_4_xor_src_debc_mhl_dst_debc
-   201                          	EXTERN ____sdcc_4_or_src_debc_mhl_dst_debc
-   202                          	EXTERN ____sdcc_4_and_src_debc_mhl_dst_debc
-   203                          	EXTERN ____sdcc_4_and_src_debc_hlix_dst_debc
-   204                          	EXTERN ____sdcc_4_or_src_debc_hlix_dst_debc
-   205                          	EXTERN ____sdcc_4_xor_src_debc_hlix_dst_debc
+     5                          ; Processed by Z88DK
+     6                          ;--------------------------------------------------------
+     7                          
+     8                          	EXTERN __divschar
+     9                          	EXTERN __divschar_callee
+    10                          	EXTERN __divsint
+    11                          	EXTERN __divsint_callee
+    12                          	EXTERN __divslong
+    13                          	EXTERN __divslong_callee
+    14                          	EXTERN __divslonglong
+    15                          	EXTERN __divslonglong_callee
+    16                          	EXTERN __divsuchar
+    17                          	EXTERN __divsuchar_callee
+    18                          	EXTERN __divuchar
+    19                          	EXTERN __divuchar_callee
+    20                          	EXTERN __divuint
+    21                          	EXTERN __divuint_callee
+    22                          	EXTERN __divulong
+    23                          	EXTERN __divulong_callee
+    24                          	EXTERN __divulonglong
+    25                          	EXTERN __divulonglong_callee
+    26                          	EXTERN __divuschar
+    27                          	EXTERN __divuschar_callee
+    28                          	EXTERN __modschar
+    29                          	EXTERN __modschar_callee
+    30                          	EXTERN __modsint
+    31                          	EXTERN __modsint_callee
+    32                          	EXTERN __modslong
+    33                          	EXTERN __modslong_callee
+    34                          	EXTERN __modslonglong
+    35                          	EXTERN __modslonglong_callee
+    36                          	EXTERN __modsuchar
+    37                          	EXTERN __modsuchar_callee
+    38                          	EXTERN __moduchar
+    39                          	EXTERN __moduchar_callee
+    40                          	EXTERN __moduint
+    41                          	EXTERN __moduint_callee
+    42                          	EXTERN __modulong
+    43                          	EXTERN __modulong_callee
+    44                          	EXTERN __modulonglong
+    45                          	EXTERN __modulonglong_callee
+    46                          	EXTERN __moduschar
+    47                          	EXTERN __moduschar_callee
+    48                          	EXTERN __mulint
+    49                          	EXTERN __mulint_callee
+    50                          	EXTERN __mullong
+    51                          	EXTERN __mullong_callee
+    52                          	EXTERN __mullonglong
+    53                          	EXTERN __mullonglong_callee
+    54                          	EXTERN __mulschar
+    55                          	EXTERN __mulschar_callee
+    56                          	EXTERN __mulsuchar
+    57                          	EXTERN __mulsuchar_callee
+    58                          	EXTERN __muluchar
+    59                          	EXTERN __muluchar_callee
+    60                          	EXTERN __muluschar
+    61                          	EXTERN __muluschar_callee
+    62                          	EXTERN __rlslonglong
+    63                          	EXTERN __rlslonglong_callee
+    64                          	EXTERN __rlulonglong
+    65                          	EXTERN __rlulonglong_callee
+    66                          	EXTERN __rrslonglong
+    67                          	EXTERN __rrslonglong_callee
+    68                          	EXTERN __rrulonglong
+    69                          	EXTERN __rrulonglong_callee
+    70                          	EXTERN ___mulsint2slong
+    71                          	EXTERN ___mulsint2slong_callee
+    72                          	EXTERN ___muluint2ulong
+    73                          	EXTERN ___muluint2ulong_callee
+    74                          	EXTERN ___sdcc_call_hl
+    75                          	EXTERN ___sdcc_call_iy
+    76                          	EXTERN ___sdcc_enter_ix
+    77                          	EXTERN banked_call
+    78                          	EXTERN _banked_ret
+    79                          	EXTERN ___fs2schar
+    80                          	EXTERN ___fs2schar_callee
+    81                          	EXTERN ___fs2sint
+    82                          	EXTERN ___fs2sint_callee
+    83                          	EXTERN ___fs2slong
+    84                          	EXTERN ___fs2slong_callee
+    85                          	EXTERN ___fs2slonglong
+    86                          	EXTERN ___fs2slonglong_callee
+    87                          	EXTERN ___fs2uchar
+    88                          	EXTERN ___fs2uchar_callee
+    89                          	EXTERN ___fs2uint
+    90                          	EXTERN ___fs2uint_callee
+    91                          	EXTERN ___fs2ulong
+    92                          	EXTERN ___fs2ulong_callee
+    93                          	EXTERN ___fs2ulonglong
+    94                          	EXTERN ___fs2ulonglong_callee
+    95                          	EXTERN ___fsadd
+    96                          	EXTERN ___fsadd_callee
+    97                          	EXTERN ___fsdiv
+    98                          	EXTERN ___fsdiv_callee
+    99                          	EXTERN ___fseq
+   100                          	EXTERN ___fseq_callee
+   101                          	EXTERN ___fsgt
+   102                          	EXTERN ___fsgt_callee
+   103                          	EXTERN ___fslt
+   104                          	EXTERN ___fslt_callee
+   105                          	EXTERN ___fsmul
+   106                          	EXTERN ___fsmul_callee
+   107                          	EXTERN ___fsneq
+   108                          	EXTERN ___fsneq_callee
+   109                          	EXTERN ___fssub
+   110                          	EXTERN ___fssub_callee
+   111                          	EXTERN ___schar2fs
+   112                          	EXTERN ___schar2fs_callee
+   113                          	EXTERN ___sint2fs
+   114                          	EXTERN ___sint2fs_callee
+   115                          	EXTERN ___slong2fs
+   116                          	EXTERN ___slong2fs_callee
+   117                          	EXTERN ___slonglong2fs
+   118                          	EXTERN ___slonglong2fs_callee
+   119                          	EXTERN ___uchar2fs
+   120                          	EXTERN ___uchar2fs_callee
+   121                          	EXTERN ___uint2fs
+   122                          	EXTERN ___uint2fs_callee
+   123                          	EXTERN ___ulong2fs
+   124                          	EXTERN ___ulong2fs_callee
+   125                          	EXTERN ___ulonglong2fs
+   126                          	EXTERN ___ulonglong2fs_callee
+   127                          	EXTERN ____sdcc_2_copy_src_mhl_dst_deix
+   128                          	EXTERN ____sdcc_2_copy_src_mhl_dst_bcix
+   129                          	EXTERN ____sdcc_4_copy_src_mhl_dst_deix
+   130                          	EXTERN ____sdcc_4_copy_src_mhl_dst_bcix
+   131                          	EXTERN ____sdcc_4_copy_src_mhl_dst_mbc
+   132                          	EXTERN ____sdcc_4_ldi_nosave_bc
+   133                          	EXTERN ____sdcc_4_ldi_save_bc
+   134                          	EXTERN ____sdcc_4_push_hlix
+   135                          	EXTERN ____sdcc_4_push_mhl
+   136                          	EXTERN ____sdcc_lib_setmem_hl
+   137                          	EXTERN ____sdcc_ll_add_de_bc_hl
+   138                          	EXTERN ____sdcc_ll_add_de_bc_hlix
+   139                          	EXTERN ____sdcc_ll_add_de_hlix_bc
+   140                          	EXTERN ____sdcc_ll_add_de_hlix_bcix
+   141                          	EXTERN ____sdcc_ll_add_deix_bc_hl
+   142                          	EXTERN ____sdcc_ll_add_deix_hlix
+   143                          	EXTERN ____sdcc_ll_add_hlix_bc_deix
+   144                          	EXTERN ____sdcc_ll_add_hlix_deix_bc
+   145                          	EXTERN ____sdcc_ll_add_hlix_deix_bcix
+   146                          	EXTERN ____sdcc_ll_asr_hlix_a
+   147                          	EXTERN ____sdcc_ll_asr_mbc_a
+   148                          	EXTERN ____sdcc_ll_copy_src_de_dst_hlix
+   149                          	EXTERN ____sdcc_ll_copy_src_de_dst_hlsp
+   150                          	EXTERN ____sdcc_ll_copy_src_deix_dst_hl
+   151                          	EXTERN ____sdcc_ll_copy_src_deix_dst_hlix
+   152                          	EXTERN ____sdcc_ll_copy_src_deixm_dst_hlsp
+   153                          	EXTERN ____sdcc_ll_copy_src_desp_dst_hlsp
+   154                          	EXTERN ____sdcc_ll_copy_src_hl_dst_de
+   155                          	EXTERN ____sdcc_ll_copy_src_hlsp_dst_de
+   156                          	EXTERN ____sdcc_ll_copy_src_hlsp_dst_deixm
+   157                          	EXTERN ____sdcc_ll_lsl_hlix_a
+   158                          	EXTERN ____sdcc_ll_lsl_mbc_a
+   159                          	EXTERN ____sdcc_ll_lsr_hlix_a
+   160                          	EXTERN ____sdcc_ll_lsr_mbc_a
+   161                          	EXTERN ____sdcc_ll_push_hlix
+   162                          	EXTERN ____sdcc_ll_push_mhl
+   163                          	EXTERN ____sdcc_ll_sub_de_bc_hl
+   164                          	EXTERN ____sdcc_ll_sub_de_bc_hlix
+   165                          	EXTERN ____sdcc_ll_sub_de_hlix_bc
+   166                          	EXTERN ____sdcc_ll_sub_de_hlix_bcix
+   167                          	EXTERN ____sdcc_ll_sub_deix_bc_hl
+   168                          	EXTERN ____sdcc_ll_sub_deix_hlix
+   169                          	EXTERN ____sdcc_ll_sub_hlix_bc_deix
+   170                          	EXTERN ____sdcc_ll_sub_hlix_deix_bc
+   171                          	EXTERN ____sdcc_ll_sub_hlix_deix_bcix
+   172                          	EXTERN ____sdcc_load_debc_deix
+   173                          	EXTERN ____sdcc_load_dehl_deix
+   174                          	EXTERN ____sdcc_load_debc_mhl
+   175                          	EXTERN ____sdcc_load_hlde_mhl
+   176                          	EXTERN ____sdcc_store_dehl_bcix
+   177                          	EXTERN ____sdcc_store_debc_hlix
+   178                          	EXTERN ____sdcc_store_debc_mhl
+   179                          	EXTERN ____sdcc_cpu_pop_ei
+   180                          	EXTERN ____sdcc_cpu_pop_ei_jp
+   181                          	EXTERN ____sdcc_cpu_push_di
+   182                          	EXTERN ____sdcc_outi
+   183                          	EXTERN ____sdcc_outi_128
+   184                          	EXTERN ____sdcc_outi_256
+   185                          	EXTERN ____sdcc_ldi
+   186                          	EXTERN ____sdcc_ldi_128
+   187                          	EXTERN ____sdcc_ldi_256
+   188                          	EXTERN ____sdcc_4_copy_srcd_hlix_dst_deix
+   189                          	EXTERN ____sdcc_4_and_src_mbc_mhl_dst_deix
+   190                          	EXTERN ____sdcc_4_or_src_mbc_mhl_dst_deix
+   191                          	EXTERN ____sdcc_4_xor_src_mbc_mhl_dst_deix
+   192                          	EXTERN ____sdcc_4_or_src_dehl_dst_bcix
+   193                          	EXTERN ____sdcc_4_xor_src_dehl_dst_bcix
+   194                          	EXTERN ____sdcc_4_and_src_dehl_dst_bcix
+   195                          	EXTERN ____sdcc_4_xor_src_mbc_mhl_dst_debc
+   196                          	EXTERN ____sdcc_4_or_src_mbc_mhl_dst_debc
+   197                          	EXTERN ____sdcc_4_and_src_mbc_mhl_dst_debc
+   198                          	EXTERN ____sdcc_4_cpl_src_mhl_dst_debc
+   199                          	EXTERN ____sdcc_4_xor_src_debc_mhl_dst_debc
+   200                          	EXTERN ____sdcc_4_or_src_debc_mhl_dst_debc
+   201                          	EXTERN ____sdcc_4_and_src_debc_mhl_dst_debc
+   202                          	EXTERN ____sdcc_4_and_src_debc_hlix_dst_debc
+   203                          	EXTERN ____sdcc_4_or_src_debc_hlix_dst_debc
+   204                          	EXTERN ____sdcc_4_xor_src_debc_hlix_dst_debc
+   205                          	.zxn
    206                          
    207                          ;--------------------------------------------------------
    208                          ; Public variables in this module
@@ -573,7 +573,7 @@ src/main.c:
    568                          ;--------------------------------------------------------
    569                          ; Home
    570                          ;--------------------------------------------------------
-   571                          	SECTION IGNORE
+   571                          	SECTION code_home
    572                          ;--------------------------------------------------------
    573                          ; code
    574                          ;--------------------------------------------------------
@@ -589,186 +589,189 @@ src/main.c:
    584  0008  f5                	push	af
    585  0009  f5                	push	af
    586                          ;src/main.c:25: zx_border(border_color);
-   587  000a  210000            	ld	hl,_border_color
-   588  000d  6e                	ld	l, (hl)
+   587  000a  3a0000            	ld	a, (_border_color)
+   588  000d  6f                	ld	l, a
    589  000e  cd0000            	call	_zx_border_fastcall
    590                          ;src/main.c:26: printf(FG_GREEN BG_COL);  // Text foreground and background colors
    591  0011  210000            	ld	hl,___str_0
    592  0014  e5                	push	hl
    593  0015  cd0000            	call	_printf
    594                          ;src/main.c:27: printf(CLS); // Clear screen
-   595  0018  210000            	ld	hl,___str_1
+   595  0018  210500            	ld	hl,___str_1
    596  001b  e3                	ex	(sp),hl
    597  001c  cd0000            	call	_printf
    598  001f  f1                	pop	af
    599                          ;src/main.c:29: for (int i = 0; i < max_calculations; i++) {
    600  0020  af                	xor	a, a
-   601  0021  dd7700            	ld	(ix-2),a
-   602  0024  dd7700            	ld	(ix-1),a
+   601  0021  dd77fe            	ld	(ix-2),a
+   602  0024  dd77ff            	ld	(ix-1),a
    603                          l_main_00105:
-   604  0027  dd7e00            	ld	a,(ix-2)
-   605  002a  210000            	ld	hl,_max_calculations
+   604  0027  dd7efe            	ld	a,(ix-2)
+   605  002a  210100            	ld	hl,_max_calculations
    606  002d  96                	sub	a, (hl)
-   607  002e  dd7e00            	ld	a,(ix-1)
+   607  002e  dd7eff            	ld	a,(ix-1)
    608  0031  23                	inc	hl
    609  0032  9e                	sbc	a, (hl)
-   610  0033  e20000            	jp	PO, l_main_00124
-   611  0036  ee00              	xor	a,0x80
-   612                          l_main_00124:
-   613  0038  f20000            	jp	P, l_main_00103
+   610  0033  e23800            	jp	PO, l_main_00130
+   611  0036  ee80              	xor	a,0x80
+   612                          l_main_00130:
+   613  0038  f2a800            	jp	P, l_main_00103
    614                          ;src/main.c:30: printf("Enter a number (or -1 to exit): ");
-   615  003b  210000            	ld	hl,___str_2
+   615  003b  210700            	ld	hl,___str_2
    616  003e  e5                	push	hl
    617  003f  cd0000            	call	_printf
    618  0042  f1                	pop	af
-   619                          ;src/main.c:31: scanf("%d", &number);
-   620  0043  210000            	ld	hl,0
-   621  0046  39                	add	hl, sp
-   622  0047  e5                	push	hl
-   623  0048  210000            	ld	hl,___str_3
-   624  004b  e5                	push	hl
-   625  004c  cd0000            	call	_scanf
-   626  004f  f1                	pop	af
-   627  0050  f1                	pop	af
-   628                          ;src/main.c:33: if (number == -1) {
-   629  0051  dd7e00            	ld	a,(ix-4)
-   630  0054  dda600            	and	a,(ix-3)
-   631  0057  3c                	inc	a
-   632  0058  2000              	jr	NZ,l_main_00102
-   633                          ;src/main.c:34: return 0;
-   634  005a  210000            	ld	hl,0x0000
-   635  005d  1800              	jr	l_main_00107
-   636                          l_main_00102:
-   637                          ;src/main.c:37: factorial_result = factorial(number);
-   638  005f  e1                	pop	hl
-   639  0060  e5                	push	hl
-   640  0061  e5                	push	hl
-   641  0062  cd0000            	call	_factorial
-   642  0065  f1                	pop	af
-   643  0066  220000            	ld	(_factorial_result), hl
-   644                          ;src/main.c:38: printf("Factorial(%d) = %d\n", number, factorial_result);
-   645  0069  2a0000            	ld	hl, (_factorial_result)
-   646  006c  eb                	ex	de,hl
-   647  006d  e1                	pop	hl
-   648  006e  e5                	push	hl
-   649  006f  d5                	push	de
-   650  0070  e5                	push	hl
-   651  0071  210000            	ld	hl,___str_4
-   652  0074  e5                	push	hl
-   653  0075  cd0000            	call	_printf
-   654  0078  f1                	pop	af
-   655  0079  f1                	pop	af
-   656  007a  f1                	pop	af
-   657                          ;src/main.c:40: fibonacci_result = fibonacci(number);
-   658  007b  e1                	pop	hl
-   659  007c  e5                	push	hl
-   660  007d  e5                	push	hl
-   661  007e  cd0000            	call	_fibonacci
-   662  0081  f1                	pop	af
-   663  0082  220000            	ld	(_fibonacci_result), hl
-   664                          ;src/main.c:41: printf("Fibonacci(%d) = %d\n", number, fibonacci_result);
-   665  0085  2a0000            	ld	hl, (_fibonacci_result)
-   666  0088  eb                	ex	de,hl
-   667  0089  e1                	pop	hl
-   668  008a  e5                	push	hl
-   669  008b  d5                	push	de
-   670  008c  e5                	push	hl
-   671  008d  213f00            	ld	hl,___str_5
-   672  0090  e5                	push	hl
-   673  0091  cd0000            	call	_printf
-   674  0094  f1                	pop	af
-   675  0095  f1                	pop	af
-   676  0096  f1                	pop	af
-   677                          ;src/main.c:29: for (int i = 0; i < max_calculations; i++) {
-   678  0097  dd34fe            	inc	(ix-2)
-   679  009a  208b              	jr	NZ,l_main_00105
-   680  009c  dd34ff            	inc	(ix-1)
-   681  009f  c32700            	jp	l_main_00105
-   682                          l_main_00103:
-   683                          ;src/main.c:45: printf(FG_RED "Goodbye!\n%d calculations are enough.\n", max_calculations);
-   684  00a2  2a0100            	ld	hl, (_max_calculations)
-   685  00a5  e5                	push	hl
-   686  00a6  215300            	ld	hl,___str_6
-   687  00a9  e5                	push	hl
-   688  00aa  cd0000            	call	_printf
-   689  00ad  f1                	pop	af
-   690                          ;src/main.c:46: printf("Press a key...");
-   691  00ae  217b00            	ld	hl,___str_7
-   692  00b1  e3                	ex	(sp),hl
-   693  00b2  cd0000            	call	_printf
-   694  00b5  f1                	pop	af
-   695                          ;src/main.c:49: in_wait_nokey();    // Wait on previous key release
-   696  00b6  cd0000            	call	_in_wait_nokey
-   697                          ;src/main.c:50: in_wait_key();
-   698  00b9  cd0000            	call	_in_wait_key
-   699                          ;src/main.c:52: return 0;
-   700  00bc  210000            	ld	hl,0x0000
-   701                          l_main_00107:
-   702                          ;src/main.c:53: }
-   703  00bf  ddf9              	ld	sp, ix
-   704  00c1  dde1              	pop	ix
-   705  00c3  c9                	ret
-   706                          	SECTION rodata_compiler
-   707                          ___str_0:
-   708  0000  00                	DEFB 0x10
-   709  0001  34                	DEFM "4"
-   710  0002  00                	DEFB 0x11
-   711  0003  30                	DEFM "0"
-   712  0004  00                	DEFB 0x00
-   713                          	SECTION rodata_compiler
-   714                          ___str_1:
-   715  0005  00                	DEFB 0x0c
-   716  0006  00                	DEFB 0x00
-   717                          	SECTION rodata_compiler
-   718                          ___str_2:
-   719  0007  456e746500006120  	DEFM "Enter a number (or -1 to exit): "
-              00006d0000722000  
-              0072050031200000  
-              20657869fe293aff  
-   720  0027  00                	DEFB 0x00
-   721                          	SECTION rodata_compiler
-   722                          ___str_3:
-   723  0028  25fe              	DEFM "%d"
-   724  002a  00                	DEFB 0x00
-   725                          	SECTION rodata_compiler
-   726                          ___str_4:
-   727  002b  010063746fff6961  	DEFM "Factorial(%d) = %d"
-              6c3800648020a200  
-              2507              
-   728  003d  0a                	DEFB 0x0a
-   729  003e  00                	DEFB 0x00
-   730                          	SECTION rodata_compiler
-   731                          ___str_5:
-   732  003f  4600006f6e000063  	DEFM "Fibonacci(%d) = %d"
-              6928280029200000  
+   619                          ;src/main.c:31: fflush(stdin); // Clear input buffer (scanf)
+   620  0043  2a0000            	ld	hl, (_stdin)
+   621  0046  cd0000            	call	_fflush_fastcall
+   622                          ;src/main.c:32: scanf("%d", &number);
+   623  0049  210000            	ld	hl,0
+   624  004c  39                	add	hl, sp
+   625  004d  e5                	push	hl
+   626  004e  212800            	ld	hl,___str_3
+   627  0051  e5                	push	hl
+   628  0052  cd0000            	call	_scanf
+   629  0055  f1                	pop	af
+   630  0056  f1                	pop	af
+   631                          ;src/main.c:34: if (number == -1) {
+   632  0057  dd7efc            	ld	a,(ix-4)
+   633  005a  dda6fd            	and	a,(ix-3)
+   634  005d  3c                	inc	a
+   635  005e  2005              	jr	NZ,l_main_00102
+   636                          ;src/main.c:35: return 0;
+   637  0060  210000            	ld	hl,0x0000
+   638  0063  1860              	jr	l_main_00107
+   639                          l_main_00102:
+   640                          ;src/main.c:38: factorial_result = factorial(number);
+   641  0065  e1                	pop	hl
+   642  0066  e5                	push	hl
+   643  0067  e5                	push	hl
+   644  0068  cd0000            	call	_factorial
+   645  006b  f1                	pop	af
+   646  006c  220300            	ld	(_factorial_result), hl
+   647                          ;src/main.c:39: printf("Factorial(%d) = %d\n", number, factorial_result);
+   648  006f  2a0300            	ld	hl, (_factorial_result)
+   649  0072  eb                	ex	de,hl
+   650  0073  e1                	pop	hl
+   651  0074  e5                	push	hl
+   652  0075  d5                	push	de
+   653  0076  e5                	push	hl
+   654  0077  212b00            	ld	hl,___str_4
+   655  007a  e5                	push	hl
+   656  007b  cd0000            	call	_printf
+   657  007e  f1                	pop	af
+   658  007f  f1                	pop	af
+   659  0080  f1                	pop	af
+   660                          ;src/main.c:41: fibonacci_result = fibonacci(number);
+   661  0081  e1                	pop	hl
+   662  0082  e5                	push	hl
+   663  0083  e5                	push	hl
+   664  0084  cd0000            	call	_fibonacci
+   665  0087  f1                	pop	af
+   666  0088  220500            	ld	(_fibonacci_result), hl
+   667                          ;src/main.c:42: printf("Fibonacci(%d) = %d\n", number, fibonacci_result);
+   668  008b  2a0500            	ld	hl, (_fibonacci_result)
+   669  008e  eb                	ex	de,hl
+   670  008f  e1                	pop	hl
+   671  0090  e5                	push	hl
+   672  0091  d5                	push	de
+   673  0092  e5                	push	hl
+   674  0093  213f00            	ld	hl,___str_5
+   675  0096  e5                	push	hl
+   676  0097  cd0000            	call	_printf
+   677  009a  f1                	pop	af
+   678  009b  f1                	pop	af
+   679  009c  f1                	pop	af
+   680                          ;src/main.c:29: for (int i = 0; i < max_calculations; i++) {
+   681  009d  dd34fe            	inc	(ix-2)
+   682  00a0  2085              	jr	NZ,l_main_00105
+   683  00a2  dd34ff            	inc	(ix-1)
+   684  00a5  c32700            	jp	l_main_00105
+   685                          l_main_00103:
+   686                          ;src/main.c:46: printf(FG_RED "Goodbye!\n%d calculations are enough.\n", max_calculations);
+   687  00a8  2a0100            	ld	hl, (_max_calculations)
+   688  00ab  e5                	push	hl
+   689  00ac  215300            	ld	hl,___str_6
+   690  00af  e5                	push	hl
+   691  00b0  cd0000            	call	_printf
+   692  00b3  f1                	pop	af
+   693                          ;src/main.c:47: printf("Press a key...");
+   694  00b4  217b00            	ld	hl,___str_7
+   695  00b7  e3                	ex	(sp),hl
+   696  00b8  cd0000            	call	_printf
+   697  00bb  f1                	pop	af
+   698                          ;src/main.c:50: in_wait_nokey();    // Wait on previous key release
+   699  00bc  cd0000            	call	_in_wait_nokey
+   700                          ;src/main.c:51: in_wait_key();
+   701  00bf  cd0000            	call	_in_wait_key
+   702                          ;src/main.c:53: return 0;
+   703  00c2  210000            	ld	hl,0x0000
+   704                          l_main_00107:
+   705                          ;src/main.c:54: }
+   706  00c5  ddf9              	ld	sp, ix
+   707  00c7  dde1              	pop	ix
+   708  00c9  c9                	ret
+   709                          	SECTION rodata_compiler
+   710                          ___str_0:
+   711  0000  10                	DEFB 0x10
+   712  0001  34                	DEFM "4"
+   713  0002  11                	DEFB 0x11
+   714  0003  30                	DEFM "0"
+   715  0004  00                	DEFB 0x00
+   716                          	SECTION rodata_compiler
+   717                          ___str_1:
+   718  0005  0c                	DEFB 0x0c
+   719  0006  00                	DEFB 0x00
+   720                          	SECTION rodata_compiler
+   721                          ___str_2:
+   722  0007  456e746572206120  	DEFM "Enter a number (or -1 to exit): "
+              6e756d6265722028  
+              6f72202d3120746f  
+              2065786974293a20  
+   723  0027  00                	DEFB 0x00
+   724                          	SECTION rodata_compiler
+   725                          ___str_3:
+   726  0028  2564              	DEFM "%d"
+   727  002a  00                	DEFB 0x00
+   728                          	SECTION rodata_compiler
+   729                          ___str_4:
+   730  002b  466163746f726961  	DEFM "Factorial(%d) = %d"
+              6c28256429203d20  
               2564              
-   733  0051  0a                	DEFB 0x0a
-   734  0052  00                	DEFB 0x00
-   735                          	SECTION rodata_compiler
-   736                          ___str_6:
-   737  0053  10                	DEFB 0x10
-   738  0054  3247fd6f64057900  	DEFM "2Goodbye!"
-              00                
-   739  005d  0a                	DEFB 0x0a
-   740  005e  6064206361000075  	DEFM "%d calculations are enough."
-              6c03006903007320  
-              617265202b006f75  
-              00002e            
-   741  0079  0a                	DEFB 0x0a
-   742  007a  00                	DEFB 0x00
-   743                          	SECTION rodata_compiler
-   744                          ___str_7:
-   745  007b  5072657300006120  	DEFM "Press a key..."
-              05007905002e      
-   746  0089  00                	DEFB 0x00
-   747                          	SECTION data_compiler
-   748                          _border_color:
-   749  0000  01                	DEFB +0x01
-   750                          _max_calculations:
-   751  0001  0500              	DEFW +0x0005
-   752                          _factorial_result:
-   753  0003  0000              	DEFW +0x0000
-   754                          _fibonacci_result:
-   755  0005  0000              	DEFW +0x0000
-   756                          	SECTION IGNORE
-   757                          
+   731  003d  0a                	DEFB 0x0a
+   732  003e  00                	DEFB 0x00
+   733                          	SECTION rodata_compiler
+   734                          ___str_5:
+   735  003f  4669626f6e616363  	DEFM "Fibonacci(%d) = %d"
+              6928256429203d20  
+              2564              
+   736  0051  0a                	DEFB 0x0a
+   737  0052  00                	DEFB 0x00
+   738                          	SECTION rodata_compiler
+   739                          ___str_6:
+   740  0053  10                	DEFB 0x10
+   741  0054  32476f6f64627965  	DEFM "2Goodbye!"
+              21                
+   742  005d  0a                	DEFB 0x0a
+   743  005e  25642063616c6375  	DEFM "%d calculations are enough."
+              6c6174696f6e7320  
+              61726520656e6f75  
+              67682e            
+   744  0079  0a                	DEFB 0x0a
+   745  007a  00                	DEFB 0x00
+   746                          	SECTION rodata_compiler
+   747                          ___str_7:
+   748  007b  5072657373206120  	DEFM "Press a key..."
+              6b65792e2e2e      
+   749  0089  00                	DEFB 0x00
+   750                          	SECTION data_compiler
+   751                          _border_color:
+   752  0000  01                	DEFB +0x01
+   753                          _max_calculations:
+   754  0001  0500              	DEFW +0x0005
+   755                          _factorial_result:
+   756  0003  0000              	DEFW +0x0000
+   757                          _fibonacci_result:
+   758  0005  0000              	DEFW +0x0000
+   759                          	SECTION IGNORE
+   760                          

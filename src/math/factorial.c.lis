@@ -1,213 +1,213 @@
-/tmp/tmpfOqturDY.asm:
+/tmp/tmp72vH0U09.asm:
      1                          MODULE factorial_c
      2                          LINE 0, "src/math/factorial.c"
 src/math/factorial.c:
                                 
      1                          ;--------------------------------------------------------
      2                          ; File Created by SDCC : free open source ISO C Compiler
-     3                          ; Version 4.3.0 #14210 (Mac OS X ppc)
+     3                          ; Version 4.5.0 #15242 (Mac OS X ppc)
      4                          ;--------------------------------------------------------
-     5                          	.zxn
-     6                          ; Processed by Z88DK
-     7                          ;--------------------------------------------------------
-     8                          
-     9                          	EXTERN __divschar
-    10                          	EXTERN __divschar_callee
-    11                          	EXTERN __divsint
-    12                          	EXTERN __divsint_callee
-    13                          	EXTERN __divslong
-    14                          	EXTERN __divslong_callee
-    15                          	EXTERN __divslonglong
-    16                          	EXTERN __divslonglong_callee
-    17                          	EXTERN __divsuchar
-    18                          	EXTERN __divsuchar_callee
-    19                          	EXTERN __divuchar
-    20                          	EXTERN __divuchar_callee
-    21                          	EXTERN __divuint
-    22                          	EXTERN __divuint_callee
-    23                          	EXTERN __divulong
-    24                          	EXTERN __divulong_callee
-    25                          	EXTERN __divulonglong
-    26                          	EXTERN __divulonglong_callee
-    27                          	EXTERN __divuschar
-    28                          	EXTERN __divuschar_callee
-    29                          	EXTERN __modschar
-    30                          	EXTERN __modschar_callee
-    31                          	EXTERN __modsint
-    32                          	EXTERN __modsint_callee
-    33                          	EXTERN __modslong
-    34                          	EXTERN __modslong_callee
-    35                          	EXTERN __modslonglong
-    36                          	EXTERN __modslonglong_callee
-    37                          	EXTERN __modsuchar
-    38                          	EXTERN __modsuchar_callee
-    39                          	EXTERN __moduchar
-    40                          	EXTERN __moduchar_callee
-    41                          	EXTERN __moduint
-    42                          	EXTERN __moduint_callee
-    43                          	EXTERN __modulong
-    44                          	EXTERN __modulong_callee
-    45                          	EXTERN __modulonglong
-    46                          	EXTERN __modulonglong_callee
-    47                          	EXTERN __moduschar
-    48                          	EXTERN __moduschar_callee
-    49                          	EXTERN __mulint
-    50                          	EXTERN __mulint_callee
-    51                          	EXTERN __mullong
-    52                          	EXTERN __mullong_callee
-    53                          	EXTERN __mullonglong
-    54                          	EXTERN __mullonglong_callee
-    55                          	EXTERN __mulschar
-    56                          	EXTERN __mulschar_callee
-    57                          	EXTERN __mulsuchar
-    58                          	EXTERN __mulsuchar_callee
-    59                          	EXTERN __muluchar
-    60                          	EXTERN __muluchar_callee
-    61                          	EXTERN __muluschar
-    62                          	EXTERN __muluschar_callee
-    63                          	EXTERN __rlslonglong
-    64                          	EXTERN __rlslonglong_callee
-    65                          	EXTERN __rlulonglong
-    66                          	EXTERN __rlulonglong_callee
-    67                          	EXTERN __rrslonglong
-    68                          	EXTERN __rrslonglong_callee
-    69                          	EXTERN __rrulonglong
-    70                          	EXTERN __rrulonglong_callee
-    71                          	EXTERN ___mulsint2slong
-    72                          	EXTERN ___mulsint2slong_callee
-    73                          	EXTERN ___muluint2ulong
-    74                          	EXTERN ___muluint2ulong_callee
-    75                          	EXTERN ___sdcc_call_hl
-    76                          	EXTERN ___sdcc_call_iy
-    77                          	EXTERN ___sdcc_enter_ix
-    78                          	EXTERN banked_call
-    79                          	EXTERN _banked_ret
-    80                          	EXTERN ___fs2schar
-    81                          	EXTERN ___fs2schar_callee
-    82                          	EXTERN ___fs2sint
-    83                          	EXTERN ___fs2sint_callee
-    84                          	EXTERN ___fs2slong
-    85                          	EXTERN ___fs2slong_callee
-    86                          	EXTERN ___fs2slonglong
-    87                          	EXTERN ___fs2slonglong_callee
-    88                          	EXTERN ___fs2uchar
-    89                          	EXTERN ___fs2uchar_callee
-    90                          	EXTERN ___fs2uint
-    91                          	EXTERN ___fs2uint_callee
-    92                          	EXTERN ___fs2ulong
-    93                          	EXTERN ___fs2ulong_callee
-    94                          	EXTERN ___fs2ulonglong
-    95                          	EXTERN ___fs2ulonglong_callee
-    96                          	EXTERN ___fsadd
-    97                          	EXTERN ___fsadd_callee
-    98                          	EXTERN ___fsdiv
-    99                          	EXTERN ___fsdiv_callee
-   100                          	EXTERN ___fseq
-   101                          	EXTERN ___fseq_callee
-   102                          	EXTERN ___fsgt
-   103                          	EXTERN ___fsgt_callee
-   104                          	EXTERN ___fslt
-   105                          	EXTERN ___fslt_callee
-   106                          	EXTERN ___fsmul
-   107                          	EXTERN ___fsmul_callee
-   108                          	EXTERN ___fsneq
-   109                          	EXTERN ___fsneq_callee
-   110                          	EXTERN ___fssub
-   111                          	EXTERN ___fssub_callee
-   112                          	EXTERN ___schar2fs
-   113                          	EXTERN ___schar2fs_callee
-   114                          	EXTERN ___sint2fs
-   115                          	EXTERN ___sint2fs_callee
-   116                          	EXTERN ___slong2fs
-   117                          	EXTERN ___slong2fs_callee
-   118                          	EXTERN ___slonglong2fs
-   119                          	EXTERN ___slonglong2fs_callee
-   120                          	EXTERN ___uchar2fs
-   121                          	EXTERN ___uchar2fs_callee
-   122                          	EXTERN ___uint2fs
-   123                          	EXTERN ___uint2fs_callee
-   124                          	EXTERN ___ulong2fs
-   125                          	EXTERN ___ulong2fs_callee
-   126                          	EXTERN ___ulonglong2fs
-   127                          	EXTERN ___ulonglong2fs_callee
-   128                          	EXTERN ____sdcc_2_copy_src_mhl_dst_deix
-   129                          	EXTERN ____sdcc_2_copy_src_mhl_dst_bcix
-   130                          	EXTERN ____sdcc_4_copy_src_mhl_dst_deix
-   131                          	EXTERN ____sdcc_4_copy_src_mhl_dst_bcix
-   132                          	EXTERN ____sdcc_4_copy_src_mhl_dst_mbc
-   133                          	EXTERN ____sdcc_4_ldi_nosave_bc
-   134                          	EXTERN ____sdcc_4_ldi_save_bc
-   135                          	EXTERN ____sdcc_4_push_hlix
-   136                          	EXTERN ____sdcc_4_push_mhl
-   137                          	EXTERN ____sdcc_lib_setmem_hl
-   138                          	EXTERN ____sdcc_ll_add_de_bc_hl
-   139                          	EXTERN ____sdcc_ll_add_de_bc_hlix
-   140                          	EXTERN ____sdcc_ll_add_de_hlix_bc
-   141                          	EXTERN ____sdcc_ll_add_de_hlix_bcix
-   142                          	EXTERN ____sdcc_ll_add_deix_bc_hl
-   143                          	EXTERN ____sdcc_ll_add_deix_hlix
-   144                          	EXTERN ____sdcc_ll_add_hlix_bc_deix
-   145                          	EXTERN ____sdcc_ll_add_hlix_deix_bc
-   146                          	EXTERN ____sdcc_ll_add_hlix_deix_bcix
-   147                          	EXTERN ____sdcc_ll_asr_hlix_a
-   148                          	EXTERN ____sdcc_ll_asr_mbc_a
-   149                          	EXTERN ____sdcc_ll_copy_src_de_dst_hlix
-   150                          	EXTERN ____sdcc_ll_copy_src_de_dst_hlsp
-   151                          	EXTERN ____sdcc_ll_copy_src_deix_dst_hl
-   152                          	EXTERN ____sdcc_ll_copy_src_deix_dst_hlix
-   153                          	EXTERN ____sdcc_ll_copy_src_deixm_dst_hlsp
-   154                          	EXTERN ____sdcc_ll_copy_src_desp_dst_hlsp
-   155                          	EXTERN ____sdcc_ll_copy_src_hl_dst_de
-   156                          	EXTERN ____sdcc_ll_copy_src_hlsp_dst_de
-   157                          	EXTERN ____sdcc_ll_copy_src_hlsp_dst_deixm
-   158                          	EXTERN ____sdcc_ll_lsl_hlix_a
-   159                          	EXTERN ____sdcc_ll_lsl_mbc_a
-   160                          	EXTERN ____sdcc_ll_lsr_hlix_a
-   161                          	EXTERN ____sdcc_ll_lsr_mbc_a
-   162                          	EXTERN ____sdcc_ll_push_hlix
-   163                          	EXTERN ____sdcc_ll_push_mhl
-   164                          	EXTERN ____sdcc_ll_sub_de_bc_hl
-   165                          	EXTERN ____sdcc_ll_sub_de_bc_hlix
-   166                          	EXTERN ____sdcc_ll_sub_de_hlix_bc
-   167                          	EXTERN ____sdcc_ll_sub_de_hlix_bcix
-   168                          	EXTERN ____sdcc_ll_sub_deix_bc_hl
-   169                          	EXTERN ____sdcc_ll_sub_deix_hlix
-   170                          	EXTERN ____sdcc_ll_sub_hlix_bc_deix
-   171                          	EXTERN ____sdcc_ll_sub_hlix_deix_bc
-   172                          	EXTERN ____sdcc_ll_sub_hlix_deix_bcix
-   173                          	EXTERN ____sdcc_load_debc_deix
-   174                          	EXTERN ____sdcc_load_dehl_deix
-   175                          	EXTERN ____sdcc_load_debc_mhl
-   176                          	EXTERN ____sdcc_load_hlde_mhl
-   177                          	EXTERN ____sdcc_store_dehl_bcix
-   178                          	EXTERN ____sdcc_store_debc_hlix
-   179                          	EXTERN ____sdcc_store_debc_mhl
-   180                          	EXTERN ____sdcc_cpu_pop_ei
-   181                          	EXTERN ____sdcc_cpu_pop_ei_jp
-   182                          	EXTERN ____sdcc_cpu_push_di
-   183                          	EXTERN ____sdcc_outi
-   184                          	EXTERN ____sdcc_outi_128
-   185                          	EXTERN ____sdcc_outi_256
-   186                          	EXTERN ____sdcc_ldi
-   187                          	EXTERN ____sdcc_ldi_128
-   188                          	EXTERN ____sdcc_ldi_256
-   189                          	EXTERN ____sdcc_4_copy_srcd_hlix_dst_deix
-   190                          	EXTERN ____sdcc_4_and_src_mbc_mhl_dst_deix
-   191                          	EXTERN ____sdcc_4_or_src_mbc_mhl_dst_deix
-   192                          	EXTERN ____sdcc_4_xor_src_mbc_mhl_dst_deix
-   193                          	EXTERN ____sdcc_4_or_src_dehl_dst_bcix
-   194                          	EXTERN ____sdcc_4_xor_src_dehl_dst_bcix
-   195                          	EXTERN ____sdcc_4_and_src_dehl_dst_bcix
-   196                          	EXTERN ____sdcc_4_xor_src_mbc_mhl_dst_debc
-   197                          	EXTERN ____sdcc_4_or_src_mbc_mhl_dst_debc
-   198                          	EXTERN ____sdcc_4_and_src_mbc_mhl_dst_debc
-   199                          	EXTERN ____sdcc_4_cpl_src_mhl_dst_debc
-   200                          	EXTERN ____sdcc_4_xor_src_debc_mhl_dst_debc
-   201                          	EXTERN ____sdcc_4_or_src_debc_mhl_dst_debc
-   202                          	EXTERN ____sdcc_4_and_src_debc_mhl_dst_debc
-   203                          	EXTERN ____sdcc_4_and_src_debc_hlix_dst_debc
-   204                          	EXTERN ____sdcc_4_or_src_debc_hlix_dst_debc
-   205                          	EXTERN ____sdcc_4_xor_src_debc_hlix_dst_debc
+     5                          ; Processed by Z88DK
+     6                          ;--------------------------------------------------------
+     7                          
+     8                          	EXTERN __divschar
+     9                          	EXTERN __divschar_callee
+    10                          	EXTERN __divsint
+    11                          	EXTERN __divsint_callee
+    12                          	EXTERN __divslong
+    13                          	EXTERN __divslong_callee
+    14                          	EXTERN __divslonglong
+    15                          	EXTERN __divslonglong_callee
+    16                          	EXTERN __divsuchar
+    17                          	EXTERN __divsuchar_callee
+    18                          	EXTERN __divuchar
+    19                          	EXTERN __divuchar_callee
+    20                          	EXTERN __divuint
+    21                          	EXTERN __divuint_callee
+    22                          	EXTERN __divulong
+    23                          	EXTERN __divulong_callee
+    24                          	EXTERN __divulonglong
+    25                          	EXTERN __divulonglong_callee
+    26                          	EXTERN __divuschar
+    27                          	EXTERN __divuschar_callee
+    28                          	EXTERN __modschar
+    29                          	EXTERN __modschar_callee
+    30                          	EXTERN __modsint
+    31                          	EXTERN __modsint_callee
+    32                          	EXTERN __modslong
+    33                          	EXTERN __modslong_callee
+    34                          	EXTERN __modslonglong
+    35                          	EXTERN __modslonglong_callee
+    36                          	EXTERN __modsuchar
+    37                          	EXTERN __modsuchar_callee
+    38                          	EXTERN __moduchar
+    39                          	EXTERN __moduchar_callee
+    40                          	EXTERN __moduint
+    41                          	EXTERN __moduint_callee
+    42                          	EXTERN __modulong
+    43                          	EXTERN __modulong_callee
+    44                          	EXTERN __modulonglong
+    45                          	EXTERN __modulonglong_callee
+    46                          	EXTERN __moduschar
+    47                          	EXTERN __moduschar_callee
+    48                          	EXTERN __mulint
+    49                          	EXTERN __mulint_callee
+    50                          	EXTERN __mullong
+    51                          	EXTERN __mullong_callee
+    52                          	EXTERN __mullonglong
+    53                          	EXTERN __mullonglong_callee
+    54                          	EXTERN __mulschar
+    55                          	EXTERN __mulschar_callee
+    56                          	EXTERN __mulsuchar
+    57                          	EXTERN __mulsuchar_callee
+    58                          	EXTERN __muluchar
+    59                          	EXTERN __muluchar_callee
+    60                          	EXTERN __muluschar
+    61                          	EXTERN __muluschar_callee
+    62                          	EXTERN __rlslonglong
+    63                          	EXTERN __rlslonglong_callee
+    64                          	EXTERN __rlulonglong
+    65                          	EXTERN __rlulonglong_callee
+    66                          	EXTERN __rrslonglong
+    67                          	EXTERN __rrslonglong_callee
+    68                          	EXTERN __rrulonglong
+    69                          	EXTERN __rrulonglong_callee
+    70                          	EXTERN ___mulsint2slong
+    71                          	EXTERN ___mulsint2slong_callee
+    72                          	EXTERN ___muluint2ulong
+    73                          	EXTERN ___muluint2ulong_callee
+    74                          	EXTERN ___sdcc_call_hl
+    75                          	EXTERN ___sdcc_call_iy
+    76                          	EXTERN ___sdcc_enter_ix
+    77                          	EXTERN banked_call
+    78                          	EXTERN _banked_ret
+    79                          	EXTERN ___fs2schar
+    80                          	EXTERN ___fs2schar_callee
+    81                          	EXTERN ___fs2sint
+    82                          	EXTERN ___fs2sint_callee
+    83                          	EXTERN ___fs2slong
+    84                          	EXTERN ___fs2slong_callee
+    85                          	EXTERN ___fs2slonglong
+    86                          	EXTERN ___fs2slonglong_callee
+    87                          	EXTERN ___fs2uchar
+    88                          	EXTERN ___fs2uchar_callee
+    89                          	EXTERN ___fs2uint
+    90                          	EXTERN ___fs2uint_callee
+    91                          	EXTERN ___fs2ulong
+    92                          	EXTERN ___fs2ulong_callee
+    93                          	EXTERN ___fs2ulonglong
+    94                          	EXTERN ___fs2ulonglong_callee
+    95                          	EXTERN ___fsadd
+    96                          	EXTERN ___fsadd_callee
+    97                          	EXTERN ___fsdiv
+    98                          	EXTERN ___fsdiv_callee
+    99                          	EXTERN ___fseq
+   100                          	EXTERN ___fseq_callee
+   101                          	EXTERN ___fsgt
+   102                          	EXTERN ___fsgt_callee
+   103                          	EXTERN ___fslt
+   104                          	EXTERN ___fslt_callee
+   105                          	EXTERN ___fsmul
+   106                          	EXTERN ___fsmul_callee
+   107                          	EXTERN ___fsneq
+   108                          	EXTERN ___fsneq_callee
+   109                          	EXTERN ___fssub
+   110                          	EXTERN ___fssub_callee
+   111                          	EXTERN ___schar2fs
+   112                          	EXTERN ___schar2fs_callee
+   113                          	EXTERN ___sint2fs
+   114                          	EXTERN ___sint2fs_callee
+   115                          	EXTERN ___slong2fs
+   116                          	EXTERN ___slong2fs_callee
+   117                          	EXTERN ___slonglong2fs
+   118                          	EXTERN ___slonglong2fs_callee
+   119                          	EXTERN ___uchar2fs
+   120                          	EXTERN ___uchar2fs_callee
+   121                          	EXTERN ___uint2fs
+   122                          	EXTERN ___uint2fs_callee
+   123                          	EXTERN ___ulong2fs
+   124                          	EXTERN ___ulong2fs_callee
+   125                          	EXTERN ___ulonglong2fs
+   126                          	EXTERN ___ulonglong2fs_callee
+   127                          	EXTERN ____sdcc_2_copy_src_mhl_dst_deix
+   128                          	EXTERN ____sdcc_2_copy_src_mhl_dst_bcix
+   129                          	EXTERN ____sdcc_4_copy_src_mhl_dst_deix
+   130                          	EXTERN ____sdcc_4_copy_src_mhl_dst_bcix
+   131                          	EXTERN ____sdcc_4_copy_src_mhl_dst_mbc
+   132                          	EXTERN ____sdcc_4_ldi_nosave_bc
+   133                          	EXTERN ____sdcc_4_ldi_save_bc
+   134                          	EXTERN ____sdcc_4_push_hlix
+   135                          	EXTERN ____sdcc_4_push_mhl
+   136                          	EXTERN ____sdcc_lib_setmem_hl
+   137                          	EXTERN ____sdcc_ll_add_de_bc_hl
+   138                          	EXTERN ____sdcc_ll_add_de_bc_hlix
+   139                          	EXTERN ____sdcc_ll_add_de_hlix_bc
+   140                          	EXTERN ____sdcc_ll_add_de_hlix_bcix
+   141                          	EXTERN ____sdcc_ll_add_deix_bc_hl
+   142                          	EXTERN ____sdcc_ll_add_deix_hlix
+   143                          	EXTERN ____sdcc_ll_add_hlix_bc_deix
+   144                          	EXTERN ____sdcc_ll_add_hlix_deix_bc
+   145                          	EXTERN ____sdcc_ll_add_hlix_deix_bcix
+   146                          	EXTERN ____sdcc_ll_asr_hlix_a
+   147                          	EXTERN ____sdcc_ll_asr_mbc_a
+   148                          	EXTERN ____sdcc_ll_copy_src_de_dst_hlix
+   149                          	EXTERN ____sdcc_ll_copy_src_de_dst_hlsp
+   150                          	EXTERN ____sdcc_ll_copy_src_deix_dst_hl
+   151                          	EXTERN ____sdcc_ll_copy_src_deix_dst_hlix
+   152                          	EXTERN ____sdcc_ll_copy_src_deixm_dst_hlsp
+   153                          	EXTERN ____sdcc_ll_copy_src_desp_dst_hlsp
+   154                          	EXTERN ____sdcc_ll_copy_src_hl_dst_de
+   155                          	EXTERN ____sdcc_ll_copy_src_hlsp_dst_de
+   156                          	EXTERN ____sdcc_ll_copy_src_hlsp_dst_deixm
+   157                          	EXTERN ____sdcc_ll_lsl_hlix_a
+   158                          	EXTERN ____sdcc_ll_lsl_mbc_a
+   159                          	EXTERN ____sdcc_ll_lsr_hlix_a
+   160                          	EXTERN ____sdcc_ll_lsr_mbc_a
+   161                          	EXTERN ____sdcc_ll_push_hlix
+   162                          	EXTERN ____sdcc_ll_push_mhl
+   163                          	EXTERN ____sdcc_ll_sub_de_bc_hl
+   164                          	EXTERN ____sdcc_ll_sub_de_bc_hlix
+   165                          	EXTERN ____sdcc_ll_sub_de_hlix_bc
+   166                          	EXTERN ____sdcc_ll_sub_de_hlix_bcix
+   167                          	EXTERN ____sdcc_ll_sub_deix_bc_hl
+   168                          	EXTERN ____sdcc_ll_sub_deix_hlix
+   169                          	EXTERN ____sdcc_ll_sub_hlix_bc_deix
+   170                          	EXTERN ____sdcc_ll_sub_hlix_deix_bc
+   171                          	EXTERN ____sdcc_ll_sub_hlix_deix_bcix
+   172                          	EXTERN ____sdcc_load_debc_deix
+   173                          	EXTERN ____sdcc_load_dehl_deix
+   174                          	EXTERN ____sdcc_load_debc_mhl
+   175                          	EXTERN ____sdcc_load_hlde_mhl
+   176                          	EXTERN ____sdcc_store_dehl_bcix
+   177                          	EXTERN ____sdcc_store_debc_hlix
+   178                          	EXTERN ____sdcc_store_debc_mhl
+   179                          	EXTERN ____sdcc_cpu_pop_ei
+   180                          	EXTERN ____sdcc_cpu_pop_ei_jp
+   181                          	EXTERN ____sdcc_cpu_push_di
+   182                          	EXTERN ____sdcc_outi
+   183                          	EXTERN ____sdcc_outi_128
+   184                          	EXTERN ____sdcc_outi_256
+   185                          	EXTERN ____sdcc_ldi
+   186                          	EXTERN ____sdcc_ldi_128
+   187                          	EXTERN ____sdcc_ldi_256
+   188                          	EXTERN ____sdcc_4_copy_srcd_hlix_dst_deix
+   189                          	EXTERN ____sdcc_4_and_src_mbc_mhl_dst_deix
+   190                          	EXTERN ____sdcc_4_or_src_mbc_mhl_dst_deix
+   191                          	EXTERN ____sdcc_4_xor_src_mbc_mhl_dst_deix
+   192                          	EXTERN ____sdcc_4_or_src_dehl_dst_bcix
+   193                          	EXTERN ____sdcc_4_xor_src_dehl_dst_bcix
+   194                          	EXTERN ____sdcc_4_and_src_dehl_dst_bcix
+   195                          	EXTERN ____sdcc_4_xor_src_mbc_mhl_dst_debc
+   196                          	EXTERN ____sdcc_4_or_src_mbc_mhl_dst_debc
+   197                          	EXTERN ____sdcc_4_and_src_mbc_mhl_dst_debc
+   198                          	EXTERN ____sdcc_4_cpl_src_mhl_dst_debc
+   199                          	EXTERN ____sdcc_4_xor_src_debc_mhl_dst_debc
+   200                          	EXTERN ____sdcc_4_or_src_debc_mhl_dst_debc
+   201                          	EXTERN ____sdcc_4_and_src_debc_mhl_dst_debc
+   202                          	EXTERN ____sdcc_4_and_src_debc_hlix_dst_debc
+   203                          	EXTERN ____sdcc_4_or_src_debc_hlix_dst_debc
+   204                          	EXTERN ____sdcc_4_xor_src_debc_hlix_dst_debc
+   205                          	.zxn
    206                          
    207                          ;--------------------------------------------------------
    208                          ; Public variables in this module
@@ -499,337 +499,319 @@ src/math/factorial.c:
    494                          	GLOBAL _zxn_mmu_from_addr
    495                          	GLOBAL _zxn_addr_from_mmu_fastcall
    496                          	GLOBAL _zxn_addr_from_mmu
-   497                          	GLOBAL _ZXN_WRITE_MMU7_fastcall
-   498                          	GLOBAL _ZXN_WRITE_MMU7
-   499                          	GLOBAL _ZXN_WRITE_MMU6_fastcall
-   500                          	GLOBAL _ZXN_WRITE_MMU6
-   501                          	GLOBAL _ZXN_WRITE_MMU5_fastcall
-   502                          	GLOBAL _ZXN_WRITE_MMU5
-   503                          	GLOBAL _ZXN_WRITE_MMU4_fastcall
-   504                          	GLOBAL _ZXN_WRITE_MMU4
-   505                          	GLOBAL _ZXN_WRITE_MMU3_fastcall
-   506                          	GLOBAL _ZXN_WRITE_MMU3
-   507                          	GLOBAL _ZXN_WRITE_MMU2_fastcall
-   508                          	GLOBAL _ZXN_WRITE_MMU2
-   509                          	GLOBAL _ZXN_WRITE_MMU1_fastcall
-   510                          	GLOBAL _ZXN_WRITE_MMU1
-   511                          	GLOBAL _ZXN_WRITE_MMU0_fastcall
-   512                          	GLOBAL _ZXN_WRITE_MMU0
-   513                          	GLOBAL _ZXN_READ_MMU7
-   514                          	GLOBAL _ZXN_READ_MMU6
-   515                          	GLOBAL _ZXN_READ_MMU5
-   516                          	GLOBAL _ZXN_READ_MMU4
-   517                          	GLOBAL _ZXN_READ_MMU3
-   518                          	GLOBAL _ZXN_READ_MMU2
-   519                          	GLOBAL _ZXN_READ_MMU1
-   520                          	GLOBAL _ZXN_READ_MMU0
-   521                          	GLOBAL _ZXN_WRITE_REG_callee
-   522                          	GLOBAL _ZXN_WRITE_REG
-   523                          	GLOBAL _ZXN_READ_REG_fastcall
-   524                          	GLOBAL _ZXN_READ_REG
-   525                          	GLOBAL _tmpnam_ex_fastcall
-   526                          	GLOBAL _tmpnam_ex
-   527                          	GLOBAL _tmpnam_fastcall
-   528                          	GLOBAL _tmpnam
-   529                          	GLOBAL _vscanf_unlocked_callee
-   530                          	GLOBAL _vscanf_unlocked
-   531                          	GLOBAL _vprintf_unlocked_callee
-   532                          	GLOBAL _vprintf_unlocked
-   533                          	GLOBAL _vfscanf_unlocked_callee
-   534                          	GLOBAL _vfscanf_unlocked
-   535                          	GLOBAL _vfprintf_unlocked_callee
-   536                          	GLOBAL _vfprintf_unlocked
-   537                          	GLOBAL _ungetc_unlocked_callee
-   538                          	GLOBAL _ungetc_unlocked
-   539                          	GLOBAL _scanf_unlocked
-   540                          	GLOBAL _rewind_unlocked_fastcall
-   541                          	GLOBAL _rewind_unlocked
-   542                          	GLOBAL _puts_unlocked_fastcall
-   543                          	GLOBAL _puts_unlocked
-   544                          	GLOBAL _putchar_unlocked_fastcall
-   545                          	GLOBAL _putchar_unlocked
-   546                          	GLOBAL _putc_unlocked_callee
-   547                          	GLOBAL _putc_unlocked
-   548                          	GLOBAL _printf_unlocked
-   549                          	GLOBAL _gets_unlocked_fastcall
-   550                          	GLOBAL _gets_unlocked
-   551                          	GLOBAL _getline_unlocked_callee
-   552                          	GLOBAL _getline_unlocked
-   553                          	GLOBAL _getdelim_unlocked_callee
-   554                          	GLOBAL _getdelim_unlocked
-   555                          	GLOBAL _getchar_unlocked
-   556                          	GLOBAL _getc_unlocked_fastcall
-   557                          	GLOBAL _getc_unlocked
-   558                          	GLOBAL _fwrite_unlocked_callee
-   559                          	GLOBAL _fwrite_unlocked
-   560                          	GLOBAL _ftell_unlocked_fastcall
-   561                          	GLOBAL _ftell_unlocked
-   562                          	GLOBAL _fsetpos_unlocked_callee
-   563                          	GLOBAL _fsetpos_unlocked
-   564                          	GLOBAL _fseek_unlocked_callee
-   565                          	GLOBAL _fseek_unlocked
-   566                          	GLOBAL _fscanf_unlocked
-   567                          	GLOBAL _freopen_unlocked_callee
-   568                          	GLOBAL _freopen_unlocked
-   569                          	GLOBAL _fread_unlocked_callee
-   570                          	GLOBAL _fread_unlocked
-   571                          	GLOBAL _fputs_unlocked_callee
-   572                          	GLOBAL _fputs_unlocked
-   573                          	GLOBAL _fputc_unlocked_callee
-   574                          	GLOBAL _fputc_unlocked
-   575                          	GLOBAL _fprintf_unlocked
-   576                          	GLOBAL _fileno_unlocked_fastcall
-   577                          	GLOBAL _fileno_unlocked
-   578                          	GLOBAL _fgets_unlocked_callee
-   579                          	GLOBAL _fgets_unlocked
-   580                          	GLOBAL _fgetpos_unlocked_callee
-   581                          	GLOBAL _fgetpos_unlocked
-   582                          	GLOBAL _fgetc_unlocked_fastcall
-   583                          	GLOBAL _fgetc_unlocked
-   584                          	GLOBAL _fflush_unlocked_fastcall
-   585                          	GLOBAL _fflush_unlocked
-   586                          	GLOBAL _ferror_unlocked_fastcall
-   587                          	GLOBAL _ferror_unlocked
-   588                          	GLOBAL _feof_unlocked_fastcall
-   589                          	GLOBAL _feof_unlocked
-   590                          	GLOBAL _fclose_unlocked_fastcall
-   591                          	GLOBAL _fclose_unlocked
-   592                          	GLOBAL _clearerr_unlocked_fastcall
-   593                          	GLOBAL _clearerr_unlocked
-   594                          	GLOBAL _vsscanf_callee
-   595                          	GLOBAL _vsscanf
-   596                          	GLOBAL _vsprintf_callee
-   597                          	GLOBAL _vsprintf
-   598                          	GLOBAL _vsnprintf_callee
-   599                          	GLOBAL _vsnprintf
-   600                          	GLOBAL _vscanf_callee
-   601                          	GLOBAL _vscanf
-   602                          	GLOBAL _vprintf_callee
-   603                          	GLOBAL _vprintf
-   604                          	GLOBAL _vfscanf_callee
-   605                          	GLOBAL _vfscanf
-   606                          	GLOBAL _vfprintf_callee
-   607                          	GLOBAL _vfprintf
-   608                          	GLOBAL _vasprintf_callee
-   609                          	GLOBAL _vasprintf
-   610                          	GLOBAL _ungetc_callee
-   611                          	GLOBAL _ungetc
-   612                          	GLOBAL _sscanf
-   613                          	GLOBAL _sprintf
-   614                          	GLOBAL _snprintf
-   615                          	GLOBAL _scanf
-   616                          	GLOBAL _rewind_fastcall
-   617                          	GLOBAL _rewind
-   618                          	GLOBAL _puts_fastcall
-   619                          	GLOBAL _puts
-   620                          	GLOBAL _putchar_fastcall
-   621                          	GLOBAL _putchar
-   622                          	GLOBAL _putc_callee
-   623                          	GLOBAL _putc
-   624                          	GLOBAL _printf
-   625                          	GLOBAL _perror_fastcall
-   626                          	GLOBAL _perror
-   627                          	GLOBAL _open_memstream_callee
-   628                          	GLOBAL _open_memstream
-   629                          	GLOBAL _obstack_vprintf_callee
-   630                          	GLOBAL _obstack_vprintf
-   631                          	GLOBAL _obstack_printf
-   632                          	GLOBAL _gets_fastcall
-   633                          	GLOBAL _gets
-   634                          	GLOBAL _getline_callee
-   635                          	GLOBAL _getline
-   636                          	GLOBAL _getdelim_callee
-   637                          	GLOBAL _getdelim
-   638                          	GLOBAL _getchar
-   639                          	GLOBAL _getc_fastcall
-   640                          	GLOBAL _getc
-   641                          	GLOBAL _fwrite_callee
-   642                          	GLOBAL _fwrite
-   643                          	GLOBAL _funlockfile_fastcall
-   644                          	GLOBAL _funlockfile
-   645                          	GLOBAL _ftrylockfile_fastcall
-   646                          	GLOBAL _ftrylockfile
-   647                          	GLOBAL _ftell_fastcall
-   648                          	GLOBAL _ftell
-   649                          	GLOBAL _fsetpos_callee
-   650                          	GLOBAL _fsetpos
-   651                          	GLOBAL _fseek_callee
-   652                          	GLOBAL _fseek
-   653                          	GLOBAL _fscanf
-   654                          	GLOBAL _freopen_callee
-   655                          	GLOBAL _freopen
-   656                          	GLOBAL _fread_callee
-   657                          	GLOBAL _fread
-   658                          	GLOBAL _fputs_callee
-   659                          	GLOBAL _fputs
-   660                          	GLOBAL _fputc_callee
-   661                          	GLOBAL _fputc
-   662                          	GLOBAL _fprintf
-   663                          	GLOBAL _fopen_callee
-   664                          	GLOBAL _fopen
-   665                          	GLOBAL _fmemopen_callee
-   666                          	GLOBAL _fmemopen
-   667                          	GLOBAL _flockfile_fastcall
-   668                          	GLOBAL _flockfile
-   669                          	GLOBAL _fileno_fastcall
-   670                          	GLOBAL _fileno
-   671                          	GLOBAL _fgets_callee
-   672                          	GLOBAL _fgets
-   673                          	GLOBAL _fgetpos_callee
-   674                          	GLOBAL _fgetpos
-   675                          	GLOBAL _fgetc_fastcall
-   676                          	GLOBAL _fgetc
-   677                          	GLOBAL _fflush_fastcall
-   678                          	GLOBAL _fflush
-   679                          	GLOBAL _ferror_fastcall
-   680                          	GLOBAL _ferror
-   681                          	GLOBAL _feof_fastcall
-   682                          	GLOBAL _feof
-   683                          	GLOBAL _fdopen_callee
-   684                          	GLOBAL _fdopen
-   685                          	GLOBAL _fclose_fastcall
-   686                          	GLOBAL _fclose
-   687                          	GLOBAL _clearerr_fastcall
-   688                          	GLOBAL _clearerr
-   689                          	GLOBAL _asprintf
-   690                          	GLOBAL __fmemopen__callee
-   691                          	GLOBAL __fmemopen_
-   692                          	GLOBAL _GLOBAL_ZXN_PORT_DFFD
-   693                          	GLOBAL _GLOBAL_ZXN_PORT_7FFD
-   694                          	GLOBAL _GLOBAL_ZXN_PORT_1FFD
-   695                          	GLOBAL _GLOBAL_ZXN_PORT_FE
-   696                          	GLOBAL _GLOBAL_TS_PORT_FE
-   697                          	GLOBAL _GLOBAL_ZX_PORT_7FFD
-   698                          	GLOBAL _GLOBAL_ZX_PORT_1FFD
-   699                          	GLOBAL _GLOBAL_ZX_PORT_FE
-   700                          	GLOBAL _stderr
-   701                          	GLOBAL _stdout
-   702                          	GLOBAL _stdin
-   703                          	GLOBAL __MAX_FOPEN
-   704                          ;--------------------------------------------------------
-   705                          ; special function registers
-   706                          ;--------------------------------------------------------
-   707                          defc _IO_FE	=	0x00fe
-   708                          defc _IO_FF	=	0x00ff
-   709                          defc _IO_TIMEX_VIDEO_MODE	=	0x00ff
-   710                          defc _IO_1FFD	=	0x1ffd
-   711                          defc _IO_7FFD	=	0x7ffd
-   712                          defc _IO_DFFD	=	0xdffd
-   713                          defc _IO_0F	=	0x000f
-   714                          defc _IO_DAC_L0	=	0x000f
-   715                          defc _IO_1F	=	0x001f
-   716                          defc _IO_DAC_L1	=	0x001f
-   717                          defc _IO_4F	=	0x004f
-   718                          defc _IO_DAC_R0	=	0x004f
-   719                          defc _IO_5F	=	0x005f
-   720                          defc _IO_DAC_R1	=	0x005f
-   721                          defc _IO_DF	=	0x00df
-   722                          defc _IO_DAC_M0	=	0x00df
-   723                          defc _IO_FFFD	=	0xfffd
-   724                          defc _IO_TURBOSOUND	=	0xfffd
-   725                          defc _IO_AY_REG	=	0xfffd
-   726                          defc _IO_BFFD	=	0xbffd
-   727                          defc _IO_AY_DAT	=	0xbffd
-   728                          defc _IO_123B	=	0x123b
-   729                          defc _IO_LAYER_2_CONFIG	=	0x123b
-   730                          defc _IO_303B	=	0x303b
-   731                          defc _IO_SPRITE_SLOT	=	0x303b
-   732                          defc _IO_SPRITE_FLAGS	=	0x303b
-   733                          defc _IO_57	=	0x0057
-   734                          defc _IO_SPRITE_ATTRIBUTE	=	0x0057
-   735                          defc _IO_5B	=	0x005b
-   736                          defc _IO_SPRITE_PATTERN	=	0x005b
-   737                          defc _IO_143B	=	0x143b
-   738                          defc _IO_UART_RX	=	0x143b
-   739                          defc _IO_UART_BAUD_RATE	=	0x143b
-   740                          defc _IO_133B	=	0x133b
-   741                          defc _IO_UART_TX	=	0x133b
-   742                          defc _IO_UART_STATUS	=	0x133b
-   743                          defc _IO_6B	=	0x006b
-   744                          defc _IO_DMA	=	0x006b
-   745                          defc _IO_E3	=	0x00e3
-   746                          defc _IO_DIVIDE_CONTROL	=	0x00e3
-   747                          defc _IO_E7	=	0x00e7
-   748                          defc _IO_SPI_CONTROL	=	0x00e7
-   749                          defc _IO_SPI_STATUS	=	0x00e7
-   750                          defc _IO_EB	=	0x00eb
-   751                          defc _IO_SPI_DATA	=	0x00eb
-   752                          defc _IO_103B	=	0x103b
-   753                          defc _IO_I2C_SCL	=	0x103b
-   754                          defc _IO_113B	=	0x113b
-   755                          defc _IO_I2C_SDA	=	0x113b
-   756                          defc _IO_LED_L	=	0x103b
-   757                          defc _IO_243B	=	0x243b
-   758                          defc _IO_NEXTREG_REG	=	0x243b
-   759                          defc _IO_253B	=	0x253b
-   760                          defc _IO_NEXTREG_DAT	=	0x253b
-   761                          ;--------------------------------------------------------
-   762                          ; ram data
-   763                          ;--------------------------------------------------------
-   764                          	SECTION bss_compiler
-   765                          ;--------------------------------------------------------
-   766                          ; ram data
-   767                          ;--------------------------------------------------------
-   768                          
-   769                          IF 0
-   770                          
-   771                          ; .area _INITIALIZED removed by z88dk
-   772                          
-   773                          
-   774                          ENDIF
-   775                          
-   776                          ;--------------------------------------------------------
-   777                          ; absolute external ram data
-   778                          ;--------------------------------------------------------
-   779                          	SECTION IGNORE
-   780                          ;--------------------------------------------------------
-   781                          ; global & static initialisations
-   782                          ;--------------------------------------------------------
-   783                          	SECTION code_crt_init
-   784                          ;--------------------------------------------------------
-   785                          ; Home
-   786                          ;--------------------------------------------------------
-   787                          	SECTION IGNORE
-   788                          ;--------------------------------------------------------
-   789                          ; code
-   790                          ;--------------------------------------------------------
-   791                          	SECTION code_compiler
-   792                          ;src/math/factorial.c:6: int factorial(int fact_n) {
-   793                          ;	---------------------------------
-   794                          ; Function factorial
-   795                          ; ---------------------------------
-   796                          _factorial:
-   797  0000  dde5              	push	ix
-   798  0002  dd210000          	ld	ix,0
-   799  0006  dd39              	add	ix,sp
-   800                          ;src/math/factorial.c:7: int value = 1;
-   801  0008  110100            	ld	de,0x0001
-   802                          ;src/math/factorial.c:8: for (int i = 2; i <= fact_n; i++) {
-   803  000b  010200            	ld	bc,0x0002
-   804                          l_factorial_00103:
-   805  000e  dd7e04            	ld	a,(ix+4)
-   806  0011  91                	sub	a, c
-   807  0012  dd7e05            	ld	a,(ix+5)
-   808  0015  98                	sbc	a, b
-   809  0016  e21b00            	jp	PO, l_factorial_00118
-   810  0019  ee80              	xor	a,0x80
-   811                          l_factorial_00118:
-   812  001b  fa2900            	jp	M, l_factorial_00101
-   813                          ;src/math/factorial.c:9: value *= i;
-   814  001e  c5                	push	bc
-   815  001f  c5                	push	bc
-   816  0020  d5                	push	de
-   817  0021  cd0000            	call	__mulint_callee
-   818  0024  eb                	ex	de, hl
-   819  0025  c1                	pop	bc
-   820                          ;src/math/factorial.c:8: for (int i = 2; i <= fact_n; i++) {
-   821  0026  03                	inc	bc
-   822  0027  18e5              	jr	l_factorial_00103
-   823                          l_factorial_00101:
-   824                          ;src/math/factorial.c:11: return value;
-   825  0029  eb                	ex	de, hl
-   826                          ;src/math/factorial.c:12: }
-   827  002a  dde1              	pop	ix
-   828  002c  c9                	ret
-   829                          	SECTION IGNORE
-   830                          
+   497                          	GLOBAL _ZXN_READ_MMU7
+   498                          	GLOBAL _ZXN_READ_MMU6
+   499                          	GLOBAL _ZXN_READ_MMU5
+   500                          	GLOBAL _ZXN_READ_MMU4
+   501                          	GLOBAL _ZXN_READ_MMU3
+   502                          	GLOBAL _ZXN_READ_MMU2
+   503                          	GLOBAL _ZXN_READ_MMU1
+   504                          	GLOBAL _ZXN_READ_MMU0
+   505                          	GLOBAL _ZXN_WRITE_REG_callee
+   506                          	GLOBAL _ZXN_WRITE_REG
+   507                          	GLOBAL _ZXN_READ_REG_fastcall
+   508                          	GLOBAL _ZXN_READ_REG
+   509                          	GLOBAL _tmpnam_ex_fastcall
+   510                          	GLOBAL _tmpnam_ex
+   511                          	GLOBAL _tmpnam_fastcall
+   512                          	GLOBAL _tmpnam
+   513                          	GLOBAL _vscanf_unlocked_callee
+   514                          	GLOBAL _vscanf_unlocked
+   515                          	GLOBAL _vprintf_unlocked_callee
+   516                          	GLOBAL _vprintf_unlocked
+   517                          	GLOBAL _vfscanf_unlocked_callee
+   518                          	GLOBAL _vfscanf_unlocked
+   519                          	GLOBAL _vfprintf_unlocked_callee
+   520                          	GLOBAL _vfprintf_unlocked
+   521                          	GLOBAL _ungetc_unlocked_callee
+   522                          	GLOBAL _ungetc_unlocked
+   523                          	GLOBAL _scanf_unlocked
+   524                          	GLOBAL _rewind_unlocked_fastcall
+   525                          	GLOBAL _rewind_unlocked
+   526                          	GLOBAL _puts_unlocked_fastcall
+   527                          	GLOBAL _puts_unlocked
+   528                          	GLOBAL _putchar_unlocked_fastcall
+   529                          	GLOBAL _putchar_unlocked
+   530                          	GLOBAL _putc_unlocked_callee
+   531                          	GLOBAL _putc_unlocked
+   532                          	GLOBAL _printf_unlocked
+   533                          	GLOBAL _gets_unlocked_fastcall
+   534                          	GLOBAL _gets_unlocked
+   535                          	GLOBAL _getline_unlocked_callee
+   536                          	GLOBAL _getline_unlocked
+   537                          	GLOBAL _getdelim_unlocked_callee
+   538                          	GLOBAL _getdelim_unlocked
+   539                          	GLOBAL _getchar_unlocked
+   540                          	GLOBAL _getc_unlocked_fastcall
+   541                          	GLOBAL _getc_unlocked
+   542                          	GLOBAL _fwrite_unlocked_callee
+   543                          	GLOBAL _fwrite_unlocked
+   544                          	GLOBAL _ftell_unlocked_fastcall
+   545                          	GLOBAL _ftell_unlocked
+   546                          	GLOBAL _fsetpos_unlocked_callee
+   547                          	GLOBAL _fsetpos_unlocked
+   548                          	GLOBAL _fseek_unlocked_callee
+   549                          	GLOBAL _fseek_unlocked
+   550                          	GLOBAL _fscanf_unlocked
+   551                          	GLOBAL _freopen_unlocked_callee
+   552                          	GLOBAL _freopen_unlocked
+   553                          	GLOBAL _fread_unlocked_callee
+   554                          	GLOBAL _fread_unlocked
+   555                          	GLOBAL _fputs_unlocked_callee
+   556                          	GLOBAL _fputs_unlocked
+   557                          	GLOBAL _fputc_unlocked_callee
+   558                          	GLOBAL _fputc_unlocked
+   559                          	GLOBAL _fprintf_unlocked
+   560                          	GLOBAL _fileno_unlocked_fastcall
+   561                          	GLOBAL _fileno_unlocked
+   562                          	GLOBAL _fgets_unlocked_callee
+   563                          	GLOBAL _fgets_unlocked
+   564                          	GLOBAL _fgetpos_unlocked_callee
+   565                          	GLOBAL _fgetpos_unlocked
+   566                          	GLOBAL _fgetc_unlocked_fastcall
+   567                          	GLOBAL _fgetc_unlocked
+   568                          	GLOBAL _fflush_unlocked_fastcall
+   569                          	GLOBAL _fflush_unlocked
+   570                          	GLOBAL _ferror_unlocked_fastcall
+   571                          	GLOBAL _ferror_unlocked
+   572                          	GLOBAL _feof_unlocked_fastcall
+   573                          	GLOBAL _feof_unlocked
+   574                          	GLOBAL _fclose_unlocked_fastcall
+   575                          	GLOBAL _fclose_unlocked
+   576                          	GLOBAL _clearerr_unlocked_fastcall
+   577                          	GLOBAL _clearerr_unlocked
+   578                          	GLOBAL _vsscanf_callee
+   579                          	GLOBAL _vsscanf
+   580                          	GLOBAL _vsprintf_callee
+   581                          	GLOBAL _vsprintf
+   582                          	GLOBAL _vsnprintf_callee
+   583                          	GLOBAL _vsnprintf
+   584                          	GLOBAL _vscanf_callee
+   585                          	GLOBAL _vscanf
+   586                          	GLOBAL _vprintf_callee
+   587                          	GLOBAL _vprintf
+   588                          	GLOBAL _vfscanf_callee
+   589                          	GLOBAL _vfscanf
+   590                          	GLOBAL _vfprintf_callee
+   591                          	GLOBAL _vfprintf
+   592                          	GLOBAL _vasprintf_callee
+   593                          	GLOBAL _vasprintf
+   594                          	GLOBAL _ungetc_callee
+   595                          	GLOBAL _ungetc
+   596                          	GLOBAL _sscanf
+   597                          	GLOBAL _sprintf
+   598                          	GLOBAL _snprintf
+   599                          	GLOBAL _scanf
+   600                          	GLOBAL _rewind_fastcall
+   601                          	GLOBAL _rewind
+   602                          	GLOBAL _puts_fastcall
+   603                          	GLOBAL _puts
+   604                          	GLOBAL _putchar_fastcall
+   605                          	GLOBAL _putchar
+   606                          	GLOBAL _putc_callee
+   607                          	GLOBAL _putc
+   608                          	GLOBAL _printf
+   609                          	GLOBAL _perror_fastcall
+   610                          	GLOBAL _perror
+   611                          	GLOBAL _open_memstream_callee
+   612                          	GLOBAL _open_memstream
+   613                          	GLOBAL _obstack_vprintf_callee
+   614                          	GLOBAL _obstack_vprintf
+   615                          	GLOBAL _obstack_printf
+   616                          	GLOBAL _gets_fastcall
+   617                          	GLOBAL _gets
+   618                          	GLOBAL _getline_callee
+   619                          	GLOBAL _getline
+   620                          	GLOBAL _getdelim_callee
+   621                          	GLOBAL _getdelim
+   622                          	GLOBAL _getchar
+   623                          	GLOBAL _getc_fastcall
+   624                          	GLOBAL _getc
+   625                          	GLOBAL _fwrite_callee
+   626                          	GLOBAL _fwrite
+   627                          	GLOBAL _funlockfile_fastcall
+   628                          	GLOBAL _funlockfile
+   629                          	GLOBAL _ftrylockfile_fastcall
+   630                          	GLOBAL _ftrylockfile
+   631                          	GLOBAL _ftell_fastcall
+   632                          	GLOBAL _ftell
+   633                          	GLOBAL _fsetpos_callee
+   634                          	GLOBAL _fsetpos
+   635                          	GLOBAL _fseek_callee
+   636                          	GLOBAL _fseek
+   637                          	GLOBAL _fscanf
+   638                          	GLOBAL _freopen_callee
+   639                          	GLOBAL _freopen
+   640                          	GLOBAL _fread_callee
+   641                          	GLOBAL _fread
+   642                          	GLOBAL _fputs_callee
+   643                          	GLOBAL _fputs
+   644                          	GLOBAL _fputc_callee
+   645                          	GLOBAL _fputc
+   646                          	GLOBAL _fprintf
+   647                          	GLOBAL _fopen_callee
+   648                          	GLOBAL _fopen
+   649                          	GLOBAL _fmemopen_callee
+   650                          	GLOBAL _fmemopen
+   651                          	GLOBAL _flockfile_fastcall
+   652                          	GLOBAL _flockfile
+   653                          	GLOBAL _fileno_fastcall
+   654                          	GLOBAL _fileno
+   655                          	GLOBAL _fgets_callee
+   656                          	GLOBAL _fgets
+   657                          	GLOBAL _fgetpos_callee
+   658                          	GLOBAL _fgetpos
+   659                          	GLOBAL _fgetc_fastcall
+   660                          	GLOBAL _fgetc
+   661                          	GLOBAL _fflush_fastcall
+   662                          	GLOBAL _fflush
+   663                          	GLOBAL _ferror_fastcall
+   664                          	GLOBAL _ferror
+   665                          	GLOBAL _feof_fastcall
+   666                          	GLOBAL _feof
+   667                          	GLOBAL _fdopen_callee
+   668                          	GLOBAL _fdopen
+   669                          	GLOBAL _fclose_fastcall
+   670                          	GLOBAL _fclose
+   671                          	GLOBAL _clearerr_fastcall
+   672                          	GLOBAL _clearerr
+   673                          	GLOBAL _asprintf
+   674                          	GLOBAL __fmemopen__callee
+   675                          	GLOBAL __fmemopen_
+   676                          	GLOBAL _GLOBAL_ZXN_PORT_DFFD
+   677                          	GLOBAL _GLOBAL_ZXN_PORT_7FFD
+   678                          	GLOBAL _GLOBAL_ZXN_PORT_1FFD
+   679                          	GLOBAL _GLOBAL_ZXN_PORT_FE
+   680                          	GLOBAL _GLOBAL_TS_PORT_FE
+   681                          	GLOBAL _GLOBAL_ZX_PORT_7FFD
+   682                          	GLOBAL _GLOBAL_ZX_PORT_1FFD
+   683                          	GLOBAL _GLOBAL_ZX_PORT_FE
+   684                          	GLOBAL _stderr
+   685                          	GLOBAL _stdout
+   686                          	GLOBAL _stdin
+   687                          	GLOBAL __MAX_FOPEN
+   688                          ;--------------------------------------------------------
+   689                          ; special function registers
+   690                          ;--------------------------------------------------------
+   691                          defc _IO_FE	=	0x00fe
+   692                          defc _IO_FF	=	0x00ff
+   693                          defc _IO_TIMEX_VIDEO_MODE	=	0x00ff
+   694                          defc _IO_1FFD	=	0x1ffd
+   695                          defc _IO_7FFD	=	0x7ffd
+   696                          defc _IO_DFFD	=	0xdffd
+   697                          defc _IO_0F	=	0x000f
+   698                          defc _IO_DAC_L0	=	0x000f
+   699                          defc _IO_1F	=	0x001f
+   700                          defc _IO_DAC_L1	=	0x001f
+   701                          defc _IO_4F	=	0x004f
+   702                          defc _IO_DAC_R0	=	0x004f
+   703                          defc _IO_5F	=	0x005f
+   704                          defc _IO_DAC_R1	=	0x005f
+   705                          defc _IO_DF	=	0x00df
+   706                          defc _IO_DAC_M0	=	0x00df
+   707                          defc _IO_FFFD	=	0xfffd
+   708                          defc _IO_TURBOSOUND	=	0xfffd
+   709                          defc _IO_AY_REG	=	0xfffd
+   710                          defc _IO_BFFD	=	0xbffd
+   711                          defc _IO_AY_DAT	=	0xbffd
+   712                          defc _IO_123B	=	0x123b
+   713                          defc _IO_LAYER_2_CONFIG	=	0x123b
+   714                          defc _IO_303B	=	0x303b
+   715                          defc _IO_SPRITE_SLOT	=	0x303b
+   716                          defc _IO_SPRITE_FLAGS	=	0x303b
+   717                          defc _IO_57	=	0x0057
+   718                          defc _IO_SPRITE_ATTRIBUTE	=	0x0057
+   719                          defc _IO_5B	=	0x005b
+   720                          defc _IO_SPRITE_PATTERN	=	0x005b
+   721                          defc _IO_143B	=	0x143b
+   722                          defc _IO_UART_RX	=	0x143b
+   723                          defc _IO_UART_BAUD_RATE	=	0x143b
+   724                          defc _IO_133B	=	0x133b
+   725                          defc _IO_UART_TX	=	0x133b
+   726                          defc _IO_UART_STATUS	=	0x133b
+   727                          defc _IO_6B	=	0x006b
+   728                          defc _IO_DMA	=	0x006b
+   729                          defc _IO_E3	=	0x00e3
+   730                          defc _IO_DIVIDE_CONTROL	=	0x00e3
+   731                          defc _IO_E7	=	0x00e7
+   732                          defc _IO_SPI_CONTROL	=	0x00e7
+   733                          defc _IO_SPI_STATUS	=	0x00e7
+   734                          defc _IO_EB	=	0x00eb
+   735                          defc _IO_SPI_DATA	=	0x00eb
+   736                          defc _IO_103B	=	0x103b
+   737                          defc _IO_I2C_SCL	=	0x103b
+   738                          defc _IO_113B	=	0x113b
+   739                          defc _IO_I2C_SDA	=	0x113b
+   740                          defc _IO_LED_L	=	0x103b
+   741                          defc _IO_243B	=	0x243b
+   742                          defc _IO_NEXTREG_REG	=	0x243b
+   743                          defc _IO_253B	=	0x253b
+   744                          defc _IO_NEXTREG_DAT	=	0x253b
+   745                          ;--------------------------------------------------------
+   746                          ; ram data
+   747                          ;--------------------------------------------------------
+   748                          	SECTION bss_compiler
+   749                          ;--------------------------------------------------------
+   750                          ; ram data
+   751                          ;--------------------------------------------------------
+   752                          
+   753                          IF 0
+   754                          
+   755                          ; .area _INITIALIZED removed by z88dk
+   756                          
+   757                          
+   758                          ENDIF
+   759                          
+   760                          ;--------------------------------------------------------
+   761                          ; absolute external ram data
+   762                          ;--------------------------------------------------------
+   763                          	SECTION IGNORE
+   764                          ;--------------------------------------------------------
+   765                          ; global & static initialisations
+   766                          ;--------------------------------------------------------
+   767                          	SECTION code_crt_init
+   768                          ;--------------------------------------------------------
+   769                          ; Home
+   770                          ;--------------------------------------------------------
+   771                          	SECTION code_home
+   772                          ;--------------------------------------------------------
+   773                          ; code
+   774                          ;--------------------------------------------------------
+   775                          	SECTION code_compiler
+   776                          ;src/math/factorial.c:6: int factorial(int fact_n) {
+   777                          ;	---------------------------------
+   778                          ; Function factorial
+   779                          ; ---------------------------------
+   780                          _factorial:
+   781  0000  dde5              	push	ix
+   782  0002  dd210000          	ld	ix,0
+   783  0006  dd39              	add	ix,sp
+   784                          ;src/math/factorial.c:7: int value = 1;
+   785  0008  210100            	ld	hl,0x0001
+   786                          ;src/math/factorial.c:8: for (int i = 2; i <= fact_n; i++) {
+   787  000b  010200            	ld	bc,0x0002
+   788                          l_factorial_00103:
+   789  000e  dd7e04            	ld	a,(ix+4)
+   790  0011  91                	sub	a, c
+   791  0012  dd7e05            	ld	a,(ix+5)
+   792  0015  98                	sbc	a, b
+   793  0016  e21b00            	jp	PO, l_factorial_00122
+   794  0019  ee80              	xor	a,0x80
+   795                          l_factorial_00122:
+   796  001b  fa2800            	jp	M, l_factorial_00101
+   797                          ;src/math/factorial.c:9: value *= i;
+   798  001e  c5                	push	bc
+   799  001f  c5                	push	bc
+   800  0020  e5                	push	hl
+   801                          ;src/math/factorial.c:8: for (int i = 2; i <= fact_n; i++) {
+   802  0021  cd0000            	call	__mulint_callee
+   803  0024  c1                	pop	bc
+   804  0025  03                	inc	bc
+   805  0026  18e6              	jr	l_factorial_00103
+   806                          l_factorial_00101:
+   807                          ;src/math/factorial.c:11: return value;
+   808                          ;src/math/factorial.c:12: }
+   809  0028  dde1              	pop	ix
+   810  002a  c9                	ret
+   811                          	SECTION IGNORE
+   812                          

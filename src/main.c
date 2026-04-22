@@ -28,6 +28,7 @@ int main(void) {
 
     for (int i = 0; i < max_calculations; i++) {
         printf("Enter a number (or -1 to exit): ");
+        fflush(stdin); // Clear input buffer (scanf)
         scanf("%d", &number);
 
         if (number == -1) {

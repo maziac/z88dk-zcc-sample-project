@@ -23,8 +23,10 @@
                 "src/math/fibonacci.c",
                 "src/main.c",
                 "src/misc/clear-ula.asm",
+                "-pragma-include:src/zpragma.inc",
                 "-create-app",
-                "-o", "build/main.nex"
+                "-o",
+                "build/main.nex"
             ],
             "group": {
                 "kind": "build",

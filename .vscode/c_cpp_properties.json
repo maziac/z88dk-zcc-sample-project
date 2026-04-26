@@ -6,7 +6,7 @@
         {
             "name": "z88dk",
             "includePath": [
-                "${z88dk}/include/_DEVELOPMENT/clang"
+                "${z88dk}/include/_DEVELOPMENT/common"
             ],
             // "cStandard": "c11",
             "defines": [

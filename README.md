@@ -65,8 +65,6 @@ This will re-create all the .lis, map and .nex files.
 You can also skip this step if you just want to try out DeZog as all the required .lis, .map and .nex files do come with this repo, as well.
 Of course, in this case you cannot change the sources.
 
-Note: If you are using nightly builds (> v2.4, Oct-2025) then you should change the path in the `.vscode/c_cpp_properties.json` to `${z88dk}/include/_DEVELOPMENT/common`.
-
 ## Top of stack
 In launch.json you can set the `topOfStack` to the z88dk label `__register_sp` to set the stack for evaluation in DeZog.
 ~~~json
@@ -114,6 +112,10 @@ a) The "zsim" internal simulator: You can use it if you only need to emulate the
 b) The "cspect" emulator which you can find [here](https://mdf200.itch.io/cspect). It allows to use the full (I guess) ZX Next features.
 
 For this project you only need "zsim" but you can , of course, try "cspect" as well.
+
+# Code Completion
+You can use the [C++ for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) extension for C++ code completion etc.
+In `.vscode/c_cpp_properties.json` the base configuration is already provided.
 
 # Caveats
 - Although z88dk can create object code for banked memory, the .map and .lis files lack this information. As a consequence, DeZog can not use any banking with z88dk. You will be able to debug such programs, but it may happen that DeZog cannot correctly associate files with program addresses because e.g. the 0xC000 might be used by several banks. This results in wrong display of files when stepping or breakpoints that cannot be set.

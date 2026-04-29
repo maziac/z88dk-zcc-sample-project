@@ -6,8 +6,8 @@
         {
             "name": "z88dk",
             "includePath": [
-                //"${z88dk}/include/_DEVELOPMENT/common"
-                "${z88dk}/include/_DEVELOPMENT/clang"
+                "${z88dk}/include/_DEVELOPMENT/common", // > z88dk v2.4, nightly builds
+                "${z88dk}/include/_DEVELOPMENT/sdcc" // <= z88dk v2.4
             ],
             // "cStandard": "c11",
             "defines": [
